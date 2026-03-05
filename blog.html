@@ -1,145 +1,428 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Invoice Tips & Guides – Free Resources for Freelancers | QuickInvoiceFree Blog</title>
-  <meta name="description" content="Free invoicing guides, tips, and templates for freelancers and small businesses. Learn how to write invoices, get paid faster, and manage your business finances." />
-  <meta name="keywords" content="invoice tips, freelance invoicing, invoice template, how to write an invoice, small business finance, invoice guide" />
-  <meta name="robots" content="index, follow" />
-  <link rel="canonical" href="https://quickinvoicefree.com/blog.html" />
-  <meta property="og:title" content="Invoice Tips & Guides | QuickInvoiceFree Blog" />
-  <meta property="og:description" content="Free invoicing guides for freelancers and small businesses." />
-  <meta property="og:type" content="website" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Nunito+Sans:wght@300;400;600;700&display=swap" rel="stylesheet" />
-  <style>
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-    :root {
-      --primary: #1A56DB; --primary-dark: #1340A8; --primary-light: #EFF6FF;
-      --dark: #0F172A; --dark2: #1E293B; --text: #334155; --muted: #64748B;
-      --border: #E2E8F0; --white: #FFFFFF; --bg: #F8FAFC; --accent: #F59E0B;
-      --radius: 12px; --shadow: 0 4px 24px rgba(15,23,42,0.08);
-    }
-    body { font-family: 'Nunito Sans', sans-serif; background: var(--bg); color: var(--text); }
-    h1,h2,h3,h4 { font-family: 'Syne', sans-serif; color: var(--dark); }
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-6RW8VLX5DH"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-    nav { background: var(--white); border-bottom: 1px solid var(--border); position: sticky; top: 0; z-index: 100; padding: 0 24px; }
-    .nav-inner { max-width: 1200px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; height: 64px; }
-    .nav-logo { font-family: 'Syne', sans-serif; font-weight: 800; font-size: 20px; color: var(--primary); text-decoration: none; }
-    .nav-logo span { color: var(--dark); }
-    .nav-links { display: flex; gap: 8px; }
-    .nav-links a { text-decoration: none; color: var(--text); font-weight: 600; padding: 8px 14px; border-radius: 8px; font-size: 14px; transition: all 0.2s; }
-    .nav-links a:hover, .nav-links a.active { background: var(--primary-light); color: var(--primary); }
+      gtag("config", "G-6RW8VLX5DH");
+    </script>
+    <title>
+      Invoice Tips & Guides – Free Resources for Freelancers | QuickInvoiceFree
+      Blog
+    </title>
+    <meta
+      name="description"
+      content="Free invoicing guides, tips, and templates for freelancers and small businesses. Learn how to write invoices, get paid faster, and manage your business finances."
+    />
+    <meta
+      name="keywords"
+      content="invoice tips, freelance invoicing, invoice template, how to write an invoice, small business finance, invoice guide"
+    />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://quickinvoicefree.com/blog.html" />
+    <meta
+      property="og:title"
+      content="Invoice Tips & Guides | QuickInvoiceFree Blog"
+    />
+    <meta
+      property="og:description"
+      content="Free invoicing guides for freelancers and small businesses."
+    />
+    <meta property="og:type" content="website" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Nunito+Sans:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      *,
+      *::before,
+      *::after {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      :root {
+        --primary: #1a56db;
+        --primary-dark: #1340a8;
+        --primary-light: #eff6ff;
+        --dark: #0f172a;
+        --dark2: #1e293b;
+        --text: #334155;
+        --muted: #64748b;
+        --border: #e2e8f0;
+        --white: #ffffff;
+        --bg: #f8fafc;
+        --accent: #f59e0b;
+        --radius: 12px;
+        --shadow: 0 4px 24px rgba(15, 23, 42, 0.08);
+      }
+      body {
+        font-family: "Nunito Sans", sans-serif;
+        background: var(--bg);
+        color: var(--text);
+      }
+      h1,
+      h2,
+      h3,
+      h4 {
+        font-family: "Syne", sans-serif;
+        color: var(--dark);
+      }
 
-    .ad-banner { background: linear-gradient(135deg, #f1f5f9, #e2e8f0); border: 2px dashed #CBD5E1; border-radius: var(--radius); height: 90px; display: flex; align-items: center; justify-content: center; color: var(--muted); font-size: 13px; font-weight: 600; letter-spacing: 0.05em; text-transform: uppercase; }
+      nav {
+        background: var(--white);
+        border-bottom: 1px solid var(--border);
+        position: sticky;
+        top: 0;
+        z-index: 100;
+        padding: 0 24px;
+      }
+      .nav-inner {
+        max-width: 1200px;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 64px;
+      }
+      .nav-logo {
+        font-family: "Syne", sans-serif;
+        font-weight: 800;
+        font-size: 20px;
+        color: var(--primary);
+        text-decoration: none;
+      }
+      .nav-logo span {
+        color: var(--dark);
+      }
+      .nav-links {
+        display: flex;
+        gap: 8px;
+      }
+      .nav-links a {
+        text-decoration: none;
+        color: var(--text);
+        font-weight: 600;
+        padding: 8px 14px;
+        border-radius: 8px;
+        font-size: 14px;
+        transition: all 0.2s;
+      }
+      .nav-links a:hover,
+      .nav-links a.active {
+        background: var(--primary-light);
+        color: var(--primary);
+      }
 
-    .blog-hero { background: linear-gradient(135deg, var(--dark) 0%, var(--dark2) 100%); padding: 64px 24px; text-align: center; }
-    .blog-hero h1 { color: var(--white); font-size: clamp(28px,4vw,48px); margin-bottom: 16px; }
-    .blog-hero p { color: #94A3B8; font-size: 18px; max-width: 560px; margin: 0 auto; }
+      .ad-banner {
+        background: linear-gradient(135deg, #f1f5f9, #e2e8f0);
+        border: 2px dashed #cbd5e1;
+        border-radius: var(--radius);
+        height: 90px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: var(--muted);
+        font-size: 13px;
+        font-weight: 600;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+      }
 
-    .blog-section { max-width: 1200px; margin: 0 auto; padding: 56px 24px; }
-    .blog-section h2 { font-size: 28px; margin-bottom: 32px; }
+      .blog-hero {
+        background: linear-gradient(135deg, var(--dark) 0%, var(--dark2) 100%);
+        padding: 64px 24px;
+        text-align: center;
+      }
+      .blog-hero h1 {
+        color: var(--white);
+        font-size: clamp(28px, 4vw, 48px);
+        margin-bottom: 16px;
+      }
+      .blog-hero p {
+        color: #94a3b8;
+        font-size: 18px;
+        max-width: 560px;
+        margin: 0 auto;
+      }
 
-    .blog-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px; }
-    .blog-card { background: var(--white); border-radius: 16px; box-shadow: var(--shadow); overflow: hidden; transition: transform 0.3s, box-shadow 0.3s; text-decoration: none; color: inherit; display: block; }
-    .blog-card:hover { transform: translateY(-6px); box-shadow: 0 16px 48px rgba(15,23,42,0.12); }
-    .blog-card-img { width: 100%; height: 200px; object-fit: cover; display: block; background: var(--primary-light); }
-    .blog-card-body { padding: 24px; }
-    .blog-card-category { font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; color: var(--primary); margin-bottom: 10px; }
-    .blog-card-title { font-family: 'Syne', sans-serif; font-size: 18px; font-weight: 700; color: var(--dark); margin-bottom: 10px; line-height: 1.3; }
-    .blog-card-desc { color: var(--muted); font-size: 14px; line-height: 1.7; margin-bottom: 16px; }
-    .blog-card-meta { display: flex; align-items: center; gap: 12px; font-size: 12px; color: var(--muted); }
-    .blog-card-date { font-weight: 600; }
-    .blog-card-read { color: var(--primary); font-weight: 700; font-size: 14px; }
+      .blog-section {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 56px 24px;
+      }
+      .blog-section h2 {
+        font-size: 28px;
+        margin-bottom: 32px;
+      }
 
-    .featured-post { background: var(--white); border-radius: 20px; box-shadow: var(--shadow); overflow: hidden; display: grid; grid-template-columns: 1.4fr 1fr; margin-bottom: 48px; text-decoration: none; color: inherit; transition: transform 0.3s; }
-    .featured-post:hover { transform: translateY(-4px); }
-    .featured-post img { width: 100%; height: 340px; object-fit: cover; }
-    .featured-post-body { padding: 40px; display: flex; flex-direction: column; justify-content: center; }
-    .featured-tag { display: inline-block; background: var(--accent); color: var(--dark); font-size: 12px; font-weight: 800; padding: 4px 12px; border-radius: 100px; margin-bottom: 16px; text-transform: uppercase; letter-spacing: 0.06em; }
-    .featured-post-body h2 { font-size: 26px; margin-bottom: 14px; line-height: 1.25; }
-    .featured-post-body p { color: var(--muted); font-size: 15px; line-height: 1.7; margin-bottom: 20px; }
+      .blog-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 28px;
+      }
+      .blog-card {
+        background: var(--white);
+        border-radius: 16px;
+        box-shadow: var(--shadow);
+        overflow: hidden;
+        transition:
+          transform 0.3s,
+          box-shadow 0.3s;
+        text-decoration: none;
+        color: inherit;
+        display: block;
+      }
+      .blog-card:hover {
+        transform: translateY(-6px);
+        box-shadow: 0 16px 48px rgba(15, 23, 42, 0.12);
+      }
+      .blog-card-img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+        display: block;
+        background: var(--primary-light);
+      }
+      .blog-card-body {
+        padding: 24px;
+      }
+      .blog-card-category {
+        font-size: 12px;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+        color: var(--primary);
+        margin-bottom: 10px;
+      }
+      .blog-card-title {
+        font-family: "Syne", sans-serif;
+        font-size: 18px;
+        font-weight: 700;
+        color: var(--dark);
+        margin-bottom: 10px;
+        line-height: 1.3;
+      }
+      .blog-card-desc {
+        color: var(--muted);
+        font-size: 14px;
+        line-height: 1.7;
+        margin-bottom: 16px;
+      }
+      .blog-card-meta {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        font-size: 12px;
+        color: var(--muted);
+      }
+      .blog-card-date {
+        font-weight: 600;
+      }
+      .blog-card-read {
+        color: var(--primary);
+        font-weight: 700;
+        font-size: 14px;
+      }
 
-    footer { background: var(--dark); color: #94A3B8; padding: 40px 24px; text-align: center; font-size: 14px; }
-    footer a { color: #64748B; text-decoration: none; margin: 0 12px; }
-    footer a:hover { color: var(--white); }
-    .footer-logo { font-family: 'Syne',sans-serif; font-weight: 800; color: var(--white); font-size: 20px; margin-bottom: 16px; }
+      .featured-post {
+        background: var(--white);
+        border-radius: 20px;
+        box-shadow: var(--shadow);
+        overflow: hidden;
+        display: grid;
+        grid-template-columns: 1.4fr 1fr;
+        margin-bottom: 48px;
+        text-decoration: none;
+        color: inherit;
+        transition: transform 0.3s;
+      }
+      .featured-post:hover {
+        transform: translateY(-4px);
+      }
+      .featured-post img {
+        width: 100%;
+        height: 340px;
+        object-fit: cover;
+      }
+      .featured-post-body {
+        padding: 40px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+      .featured-tag {
+        display: inline-block;
+        background: var(--accent);
+        color: var(--dark);
+        font-size: 12px;
+        font-weight: 800;
+        padding: 4px 12px;
+        border-radius: 100px;
+        margin-bottom: 16px;
+        text-transform: uppercase;
+        letter-spacing: 0.06em;
+      }
+      .featured-post-body h2 {
+        font-size: 26px;
+        margin-bottom: 14px;
+        line-height: 1.25;
+      }
+      .featured-post-body p {
+        color: var(--muted);
+        font-size: 15px;
+        line-height: 1.7;
+        margin-bottom: 20px;
+      }
 
-    #loading { text-align: center; padding: 60px; color: var(--muted); font-size: 16px; }
-    .spinner { display: inline-block; width: 36px; height: 36px; border: 3px solid var(--border); border-top-color: var(--primary); border-radius: 50%; animation: spin 0.8s linear infinite; margin-bottom: 16px; }
-    @keyframes spin { to { transform: rotate(360deg); } }
+      footer {
+        background: var(--dark);
+        color: #94a3b8;
+        padding: 40px 24px;
+        text-align: center;
+        font-size: 14px;
+      }
+      footer a {
+        color: #64748b;
+        text-decoration: none;
+        margin: 0 12px;
+      }
+      footer a:hover {
+        color: var(--white);
+      }
+      .footer-logo {
+        font-family: "Syne", sans-serif;
+        font-weight: 800;
+        color: var(--white);
+        font-size: 20px;
+        margin-bottom: 16px;
+      }
 
-    @media (max-width: 900px) {
-      .blog-grid { grid-template-columns: 1fr 1fr; }
-      .featured-post { grid-template-columns: 1fr; }
-      .featured-post img { height: 220px; }
-    }
-    @media (max-width: 600px) {
-      .blog-grid { grid-template-columns: 1fr; }
-      .nav-links a:not(.active) { display: none; }
-    }
-  </style>
-</head>
-<body>
+      #loading {
+        text-align: center;
+        padding: 60px;
+        color: var(--muted);
+        font-size: 16px;
+      }
+      .spinner {
+        display: inline-block;
+        width: 36px;
+        height: 36px;
+        border: 3px solid var(--border);
+        border-top-color: var(--primary);
+        border-radius: 50%;
+        animation: spin 0.8s linear infinite;
+        margin-bottom: 16px;
+      }
+      @keyframes spin {
+        to {
+          transform: rotate(360deg);
+        }
+      }
 
-<nav>
-  <div class="nav-inner">
-    <a href="index.html" class="nav-logo">⚡ Quick<span>InvoiceFree</span></a>
-    <div class="nav-links">
-      <a href="index.html">Invoice Generator</a>
-      <a href="expense.html">Expense Tracker</a>
-      <a href="blog.html" class="active">Blog</a>
-      <a href="about.html">About</a>
-      <a href="contact.html">Contact</a>
+      @media (max-width: 900px) {
+        .blog-grid {
+          grid-template-columns: 1fr 1fr;
+        }
+        .featured-post {
+          grid-template-columns: 1fr;
+        }
+        .featured-post img {
+          height: 220px;
+        }
+      }
+      @media (max-width: 600px) {
+        .blog-grid {
+          grid-template-columns: 1fr;
+        }
+        .nav-links a:not(.active) {
+          display: none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <div class="nav-inner">
+        <a href="index.html" class="nav-logo"
+          >⚡ Quick<span>InvoiceFree</span></a
+        >
+        <div class="nav-links">
+          <a href="index.html">Invoice Generator</a>
+          <a href="expense.html">Expense Tracker</a>
+          <a href="blog.html" class="active">Blog</a>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </div>
+    </nav>
+
+    <div style="max-width: 1200px; margin: 16px auto; padding: 0 24px">
+      <div class="ad-banner">📢 Advertisement — Google AdSense 728×90</div>
     </div>
-  </div>
-</nav>
 
-<div style="max-width:1200px;margin:16px auto;padding:0 24px">
-  <div class="ad-banner">📢 Advertisement — Google AdSense 728×90</div>
-</div>
+    <section class="blog-hero">
+      <h1>Invoice Tips & Business Guides</h1>
+      <p>
+        Free resources to help freelancers and small businesses get paid faster
+        and manage finances smarter.
+      </p>
+    </section>
 
-<section class="blog-hero">
-  <h1>Invoice Tips & Business Guides</h1>
-  <p>Free resources to help freelancers and small businesses get paid faster and manage finances smarter.</p>
-</section>
+    <section class="blog-section">
+      <div id="loading">
+        <div class="spinner"></div>
+        <br />Loading articles...
+      </div>
+      <div id="featuredPost"></div>
+      <h2 id="allPostsTitle" style="display: none">All Articles</h2>
+      <div class="blog-grid" id="blogGrid"></div>
+    </section>
 
-<section class="blog-section">
-  <div id="loading"><div class="spinner"></div><br>Loading articles...</div>
-  <div id="featuredPost"></div>
-  <h2 id="allPostsTitle" style="display:none">All Articles</h2>
-  <div class="blog-grid" id="blogGrid"></div>
-</section>
+    <div style="max-width: 1200px; margin: 0 auto; padding: 0 24px 48px">
+      <div class="ad-banner">📢 Advertisement — Google AdSense 728×90</div>
+    </div>
 
-<div style="max-width:1200px;margin:0 auto;padding:0 24px 48px">
-  <div class="ad-banner">📢 Advertisement — Google AdSense 728×90</div>
-</div>
+    <footer>
+      <div class="footer-logo">⚡ QuickInvoiceFree</div>
+      <p style="margin-bottom: 16px">
+        Free invoice generator for freelancers and small businesses.
+      </p>
+      <div>
+        <a href="index.html">Invoice Generator</a>
+        <a href="blog.html">Blog</a>
+        <a href="about.html">About</a>
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <p style="margin-top: 24px; color: #475569">
+        © 2025 QuickInvoiceFree.com
+      </p>
+    </footer>
 
-<footer>
-  <div class="footer-logo">⚡ QuickInvoiceFree</div>
-  <p style="margin-bottom:16px">Free invoice generator for freelancers and small businesses.</p>
-  <div>
-    <a href="index.html">Invoice Generator</a>
-    <a href="blog.html">Blog</a>
-    <a href="about.html">About</a>
-    <a href="privacy.html">Privacy Policy</a>
-    <a href="contact.html">Contact</a>
-  </div>
-  <p style="margin-top:24px;color:#475569">© 2025 QuickInvoiceFree.com</p>
-</footer>
+    <script>
+      fetch("posts.json")
+        .then((r) => r.json())
+        .then((posts) => {
+          document.getElementById("loading").style.display = "none";
+          document.getElementById("allPostsTitle").style.display = "block";
+          if (!posts.length) return;
 
-<script>
-  fetch('posts.json')
-    .then(r => r.json())
-    .then(posts => {
-      document.getElementById('loading').style.display = 'none';
-      document.getElementById('allPostsTitle').style.display = 'block';
-      if (!posts.length) return;
-
-      const featured = posts[0];
-      document.getElementById('featuredPost').innerHTML = `
+          const featured = posts[0];
+          document.getElementById("featuredPost").innerHTML = `
         <a href="post.html?id=${featured.id}" class="featured-post">
           <img src="${featured.heroImage}" alt="${featured.title}" loading="lazy" />
           <div class="featured-post-body">
@@ -153,9 +436,9 @@
           </div>
         </a>`;
 
-      const grid = document.getElementById('blogGrid');
-      posts.slice(1).forEach(post => {
-        grid.innerHTML += `
+          const grid = document.getElementById("blogGrid");
+          posts.slice(1).forEach((post) => {
+            grid.innerHTML += `
           <a href="post.html?id=${post.id}" class="blog-card">
             <img class="blog-card-img" src="${post.heroImage}" alt="${post.title}" loading="lazy" />
             <div class="blog-card-body">
@@ -169,11 +452,12 @@
               </div>
             </div>
           </a>`;
-      });
-    })
-    .catch(() => {
-      document.getElementById('loading').innerHTML = '<p style="color:#EF4444">Could not load posts. Make sure posts.json is in the same folder.</p>';
-    });
-</script>
-</body>
+          });
+        })
+        .catch(() => {
+          document.getElementById("loading").innerHTML =
+            '<p style="color:#EF4444">Could not load posts. Make sure posts.json is in the same folder.</p>';
+        });
+    </script>
+  </body>
 </html>

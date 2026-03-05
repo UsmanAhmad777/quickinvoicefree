@@ -1,172 +1,495 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title id="pageTitle">Blog Post | QuickInvoiceFree</title>
-  <meta name="description" id="pageDesc" content="Free invoicing tips and guides for freelancers and small businesses." />
-  <meta name="robots" content="index, follow" />
-  <meta property="og:title" id="ogTitle" content="Blog | QuickInvoiceFree" />
-  <meta property="og:description" id="ogDesc" content="" />
-  <meta property="og:image" id="ogImage" content="" />
-  <meta property="og:type" content="article" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Nunito+Sans:wght@300;400;600;700&display=swap" rel="stylesheet" />
-  <style>
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-    :root {
-      --primary: #1A56DB; --primary-light: #EFF6FF; --dark: #0F172A;
-      --dark2: #1E293B; --text: #334155; --muted: #64748B;
-      --border: #E2E8F0; --white: #FFFFFF; --bg: #F8FAFC;
-    }
-    body { font-family: 'Nunito Sans', sans-serif; background: var(--bg); color: var(--text); }
-    h1,h2,h3 { font-family: 'Syne', sans-serif; color: var(--dark); }
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-6RW8VLX5DH"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-    nav { background: var(--white); border-bottom: 1px solid var(--border); position: sticky; top: 0; z-index: 100; padding: 0 24px; }
-    .nav-inner { max-width: 1200px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; height: 64px; }
-    .nav-logo { font-family: 'Syne', sans-serif; font-weight: 800; font-size: 20px; color: var(--primary); text-decoration: none; }
-    .nav-logo span { color: var(--dark); }
-    .nav-links { display: flex; gap: 8px; }
-    .nav-links a { text-decoration: none; color: var(--text); font-weight: 600; padding: 8px 14px; border-radius: 8px; font-size: 14px; transition: all 0.2s; }
-    .nav-links a:hover { background: var(--primary-light); color: var(--primary); }
+      gtag("config", "G-6RW8VLX5DH");
+    </script>
+    <title id="pageTitle">Blog Post | QuickInvoiceFree</title>
+    <meta
+      name="description"
+      id="pageDesc"
+      content="Free invoicing tips and guides for freelancers and small businesses."
+    />
+    <meta name="robots" content="index, follow" />
+    <meta property="og:title" id="ogTitle" content="Blog | QuickInvoiceFree" />
+    <meta property="og:description" id="ogDesc" content="" />
+    <meta property="og:image" id="ogImage" content="" />
+    <meta property="og:type" content="article" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Nunito+Sans:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      *,
+      *::before,
+      *::after {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      :root {
+        --primary: #1a56db;
+        --primary-light: #eff6ff;
+        --dark: #0f172a;
+        --dark2: #1e293b;
+        --text: #334155;
+        --muted: #64748b;
+        --border: #e2e8f0;
+        --white: #ffffff;
+        --bg: #f8fafc;
+      }
+      body {
+        font-family: "Nunito Sans", sans-serif;
+        background: var(--bg);
+        color: var(--text);
+      }
+      h1,
+      h2,
+      h3 {
+        font-family: "Syne", sans-serif;
+        color: var(--dark);
+      }
 
-    .ad-banner { background: linear-gradient(135deg, #f1f5f9, #e2e8f0); border: 2px dashed #CBD5E1; border-radius: 12px; height: 90px; display: flex; align-items: center; justify-content: center; color: var(--muted); font-size: 13px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em; }
+      nav {
+        background: var(--white);
+        border-bottom: 1px solid var(--border);
+        position: sticky;
+        top: 0;
+        z-index: 100;
+        padding: 0 24px;
+      }
+      .nav-inner {
+        max-width: 1200px;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 64px;
+      }
+      .nav-logo {
+        font-family: "Syne", sans-serif;
+        font-weight: 800;
+        font-size: 20px;
+        color: var(--primary);
+        text-decoration: none;
+      }
+      .nav-logo span {
+        color: var(--dark);
+      }
+      .nav-links {
+        display: flex;
+        gap: 8px;
+      }
+      .nav-links a {
+        text-decoration: none;
+        color: var(--text);
+        font-weight: 600;
+        padding: 8px 14px;
+        border-radius: 8px;
+        font-size: 14px;
+        transition: all 0.2s;
+      }
+      .nav-links a:hover {
+        background: var(--primary-light);
+        color: var(--primary);
+      }
 
-    .post-hero { position: relative; height: 420px; overflow: hidden; }
-    .post-hero img { width: 100%; height: 100%; object-fit: cover; }
-    .post-hero-overlay { position: absolute; inset: 0; background: linear-gradient(to bottom, rgba(15,23,42,0.2) 0%, rgba(15,23,42,0.7) 100%); display: flex; align-items: flex-end; padding: 48px; }
-    .post-hero-content { max-width: 800px; }
-    .post-category { display: inline-block; background: var(--primary); color: var(--white); font-size: 12px; font-weight: 700; padding: 4px 14px; border-radius: 100px; margin-bottom: 16px; text-transform: uppercase; letter-spacing: 0.06em; }
-    .post-hero h1 { color: var(--white); font-size: clamp(24px, 4vw, 40px); line-height: 1.2; margin-bottom: 16px; }
-    .post-meta { display: flex; gap: 20px; align-items: center; color: rgba(255,255,255,0.8); font-size: 14px; }
+      .ad-banner {
+        background: linear-gradient(135deg, #f1f5f9, #e2e8f0);
+        border: 2px dashed #cbd5e1;
+        border-radius: 12px;
+        height: 90px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: var(--muted);
+        font-size: 13px;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+      }
 
-    .post-layout { max-width: 1200px; margin: 0 auto; padding: 48px 24px; display: grid; grid-template-columns: 1fr 320px; gap: 48px; align-items: start; }
-    .post-content { background: var(--white); border-radius: 16px; padding: 48px; box-shadow: 0 4px 24px rgba(15,23,42,0.08); }
-    .post-content h2 { font-size: 24px; margin: 32px 0 14px; }
-    .post-content h3 { font-size: 19px; margin: 24px 0 10px; color: var(--dark2); }
-    .post-content p { color: var(--text); font-size: 16px; line-height: 1.85; margin-bottom: 18px; }
-    .post-content ul, .post-content ol { padding-left: 24px; margin-bottom: 18px; }
-    .post-content li { font-size: 16px; line-height: 1.8; color: var(--text); margin-bottom: 6px; }
-    .post-content strong { color: var(--dark); }
-    .post-tip { background: var(--primary-light); border-left: 4px solid var(--primary); padding: 16px 20px; border-radius: 0 10px 10px 0; margin: 24px 0; font-size: 15px; color: var(--dark2); }
-    .post-tip strong { color: var(--primary); }
+      .post-hero {
+        position: relative;
+        height: 420px;
+        overflow: hidden;
+      }
+      .post-hero img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      .post-hero-overlay {
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(
+          to bottom,
+          rgba(15, 23, 42, 0.2) 0%,
+          rgba(15, 23, 42, 0.7) 100%
+        );
+        display: flex;
+        align-items: flex-end;
+        padding: 48px;
+      }
+      .post-hero-content {
+        max-width: 800px;
+      }
+      .post-category {
+        display: inline-block;
+        background: var(--primary);
+        color: var(--white);
+        font-size: 12px;
+        font-weight: 700;
+        padding: 4px 14px;
+        border-radius: 100px;
+        margin-bottom: 16px;
+        text-transform: uppercase;
+        letter-spacing: 0.06em;
+      }
+      .post-hero h1 {
+        color: var(--white);
+        font-size: clamp(24px, 4vw, 40px);
+        line-height: 1.2;
+        margin-bottom: 16px;
+      }
+      .post-meta {
+        display: flex;
+        gap: 20px;
+        align-items: center;
+        color: rgba(255, 255, 255, 0.8);
+        font-size: 14px;
+      }
 
-    .post-sidebar { position: sticky; top: 80px; display: flex; flex-direction: column; gap: 24px; }
-    .sidebar-card { background: var(--white); border-radius: 16px; padding: 24px; box-shadow: 0 4px 24px rgba(15,23,42,0.08); }
-    .sidebar-card h3 { font-size: 16px; margin-bottom: 16px; }
-    .sidebar-cta { background: var(--primary); color: var(--white); padding: 14px 20px; border-radius: 10px; text-align: center; text-decoration: none; font-weight: 700; display: block; font-family: 'Syne', sans-serif; transition: background 0.2s; }
-    .sidebar-cta:hover { background: #1340A8; }
-    .sidebar-cta p { color: rgba(255,255,255,0.8); font-size: 13px; margin-top: 6px; font-family: 'Nunito Sans', sans-serif; font-weight: 400; }
-    .related-post { display: flex; gap: 12px; text-decoration: none; color: inherit; padding: 12px 0; border-bottom: 1px solid var(--border); }
-    .related-post:last-child { border: none; padding-bottom: 0; }
-    .related-post img { width: 64px; height: 56px; object-fit: cover; border-radius: 8px; flex-shrink: 0; }
-    .related-post-title { font-size: 13px; font-weight: 700; color: var(--dark); line-height: 1.4; }
-    .related-post-date { font-size: 12px; color: var(--muted); margin-top: 4px; }
-    .related-post:hover .related-post-title { color: var(--primary); }
+      .post-layout {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 48px 24px;
+        display: grid;
+        grid-template-columns: 1fr 320px;
+        gap: 48px;
+        align-items: start;
+      }
+      .post-content {
+        background: var(--white);
+        border-radius: 16px;
+        padding: 48px;
+        box-shadow: 0 4px 24px rgba(15, 23, 42, 0.08);
+      }
+      .post-content h2 {
+        font-size: 24px;
+        margin: 32px 0 14px;
+      }
+      .post-content h3 {
+        font-size: 19px;
+        margin: 24px 0 10px;
+        color: var(--dark2);
+      }
+      .post-content p {
+        color: var(--text);
+        font-size: 16px;
+        line-height: 1.85;
+        margin-bottom: 18px;
+      }
+      .post-content ul,
+      .post-content ol {
+        padding-left: 24px;
+        margin-bottom: 18px;
+      }
+      .post-content li {
+        font-size: 16px;
+        line-height: 1.8;
+        color: var(--text);
+        margin-bottom: 6px;
+      }
+      .post-content strong {
+        color: var(--dark);
+      }
+      .post-tip {
+        background: var(--primary-light);
+        border-left: 4px solid var(--primary);
+        padding: 16px 20px;
+        border-radius: 0 10px 10px 0;
+        margin: 24px 0;
+        font-size: 15px;
+        color: var(--dark2);
+      }
+      .post-tip strong {
+        color: var(--primary);
+      }
 
-    .back-link { display: inline-flex; align-items: center; gap: 8px; color: var(--primary); text-decoration: none; font-weight: 700; font-size: 14px; margin-bottom: 24px; }
-    .back-link:hover { text-decoration: underline; }
+      .post-sidebar {
+        position: sticky;
+        top: 80px;
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+      }
+      .sidebar-card {
+        background: var(--white);
+        border-radius: 16px;
+        padding: 24px;
+        box-shadow: 0 4px 24px rgba(15, 23, 42, 0.08);
+      }
+      .sidebar-card h3 {
+        font-size: 16px;
+        margin-bottom: 16px;
+      }
+      .sidebar-cta {
+        background: var(--primary);
+        color: var(--white);
+        padding: 14px 20px;
+        border-radius: 10px;
+        text-align: center;
+        text-decoration: none;
+        font-weight: 700;
+        display: block;
+        font-family: "Syne", sans-serif;
+        transition: background 0.2s;
+      }
+      .sidebar-cta:hover {
+        background: #1340a8;
+      }
+      .sidebar-cta p {
+        color: rgba(255, 255, 255, 0.8);
+        font-size: 13px;
+        margin-top: 6px;
+        font-family: "Nunito Sans", sans-serif;
+        font-weight: 400;
+      }
+      .related-post {
+        display: flex;
+        gap: 12px;
+        text-decoration: none;
+        color: inherit;
+        padding: 12px 0;
+        border-bottom: 1px solid var(--border);
+      }
+      .related-post:last-child {
+        border: none;
+        padding-bottom: 0;
+      }
+      .related-post img {
+        width: 64px;
+        height: 56px;
+        object-fit: cover;
+        border-radius: 8px;
+        flex-shrink: 0;
+      }
+      .related-post-title {
+        font-size: 13px;
+        font-weight: 700;
+        color: var(--dark);
+        line-height: 1.4;
+      }
+      .related-post-date {
+        font-size: 12px;
+        color: var(--muted);
+        margin-top: 4px;
+      }
+      .related-post:hover .related-post-title {
+        color: var(--primary);
+      }
 
-    footer { background: var(--dark); color: #94A3B8; padding: 40px 24px; text-align: center; font-size: 14px; }
-    footer a { color: #64748B; text-decoration: none; margin: 0 12px; }
-    .footer-logo { font-family: 'Syne',sans-serif; font-weight: 800; color: var(--white); font-size: 20px; margin-bottom: 16px; }
+      .back-link {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        color: var(--primary);
+        text-decoration: none;
+        font-weight: 700;
+        font-size: 14px;
+        margin-bottom: 24px;
+      }
+      .back-link:hover {
+        text-decoration: underline;
+      }
 
-    @media (max-width: 900px) {
-      .post-layout { grid-template-columns: 1fr; }
-      .post-sidebar { position: static; }
-      .post-content { padding: 28px; }
-      .post-hero-overlay { padding: 24px; }
-      .nav-links a { display: none; }
-      .nav-links a:last-child { display: block; }
-    }
-  </style>
-</head>
-<body>
+      footer {
+        background: var(--dark);
+        color: #94a3b8;
+        padding: 40px 24px;
+        text-align: center;
+        font-size: 14px;
+      }
+      footer a {
+        color: #64748b;
+        text-decoration: none;
+        margin: 0 12px;
+      }
+      .footer-logo {
+        font-family: "Syne", sans-serif;
+        font-weight: 800;
+        color: var(--white);
+        font-size: 20px;
+        margin-bottom: 16px;
+      }
 
-<nav>
-  <div class="nav-inner">
-    <a href="index.html" class="nav-logo">⚡ Quick<span>InvoiceFree</span></a>
-    <div class="nav-links">
-      <a href="index.html">Invoice Generator</a>
-      <a href="expense.html">Expense Tracker</a>
-      <a href="blog.html">Blog</a>
-      <a href="about.html">About</a>
-      <a href="contact.html">Contact</a>
-    </div>
-  </div>
-</nav>
-
-<div style="max-width:1200px;margin:16px auto;padding:0 24px">
-  <div class="ad-banner">📢 Advertisement — Google AdSense 728×90</div>
-</div>
-
-<div id="postHero"></div>
-
-<div class="post-layout">
-  <article class="post-content" id="postBody">
-    <div style="text-align:center;padding:40px;color:#64748B">Loading article...</div>
-  </article>
-
-  <aside class="post-sidebar">
-    <div class="sidebar-card" style="background:var(--primary);color:white;border-radius:16px;padding:28px;text-align:center">
-      <div style="font-size:36px;margin-bottom:12px">⚡</div>
-      <h3 style="color:white;margin-bottom:8px;font-size:18px">Create a Free Invoice</h3>
-      <p style="color:rgba(255,255,255,0.8);font-size:14px;margin-bottom:20px">No signup. Download PDF instantly.</p>
-      <a href="index.html" class="sidebar-cta" style="background:white;color:var(--primary);border-radius:8px;padding:12px 20px;font-weight:800;text-decoration:none;display:block">Start Now — It's Free →</a>
-    </div>
-
-    <div class="sidebar-card">
-      <h3>Related Articles</h3>
-      <div id="relatedPosts">Loading...</div>
-    </div>
-
-    <div style="max-width:320px">
-      <div class="ad-banner" style="height:280px;flex-direction:column;gap:8px">
-        <span>📢</span>
-        <span>Advertisement</span>
-        <span style="font-size:11px">Google AdSense 300×250</span>
+      @media (max-width: 900px) {
+        .post-layout {
+          grid-template-columns: 1fr;
+        }
+        .post-sidebar {
+          position: static;
+        }
+        .post-content {
+          padding: 28px;
+        }
+        .post-hero-overlay {
+          padding: 24px;
+        }
+        .nav-links a {
+          display: none;
+        }
+        .nav-links a:last-child {
+          display: block;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <div class="nav-inner">
+        <a href="index.html" class="nav-logo"
+          >⚡ Quick<span>InvoiceFree</span></a
+        >
+        <div class="nav-links">
+          <a href="index.html">Invoice Generator</a>
+          <a href="expense.html">Expense Tracker</a>
+          <a href="blog.html">Blog</a>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+        </div>
       </div>
+    </nav>
+
+    <div style="max-width: 1200px; margin: 16px auto; padding: 0 24px">
+      <div class="ad-banner">📢 Advertisement — Google AdSense 728×90</div>
     </div>
-  </aside>
-</div>
 
-<div style="max-width:1200px;margin:0 auto;padding:0 24px 48px">
-  <div class="ad-banner">📢 Advertisement — Google AdSense 728×90</div>
-</div>
+    <div id="postHero"></div>
 
-<footer>
-  <div class="footer-logo">⚡ QuickInvoiceFree</div>
-  <p style="margin-bottom:16px">Free invoice generator for freelancers and small businesses.</p>
-  <div>
-    <a href="index.html">Invoice Generator</a>
-    <a href="blog.html">Blog</a>
-    <a href="about.html">About</a>
-    <a href="privacy.html">Privacy Policy</a>
-    <a href="contact.html">Contact</a>
-  </div>
-  <p style="margin-top:24px;color:#475569">© 2025 QuickInvoiceFree.com</p>
-</footer>
+    <div class="post-layout">
+      <article class="post-content" id="postBody">
+        <div style="text-align: center; padding: 40px; color: #64748b">
+          Loading article...
+        </div>
+      </article>
 
-<script>
-  const params = new URLSearchParams(window.location.search);
-  const postId = params.get('id') || '1';
+      <aside class="post-sidebar">
+        <div
+          class="sidebar-card"
+          style="
+            background: var(--primary);
+            color: white;
+            border-radius: 16px;
+            padding: 28px;
+            text-align: center;
+          "
+        >
+          <div style="font-size: 36px; margin-bottom: 12px">⚡</div>
+          <h3 style="color: white; margin-bottom: 8px; font-size: 18px">
+            Create a Free Invoice
+          </h3>
+          <p
+            style="
+              color: rgba(255, 255, 255, 0.8);
+              font-size: 14px;
+              margin-bottom: 20px;
+            "
+          >
+            No signup. Download PDF instantly.
+          </p>
+          <a
+            href="index.html"
+            class="sidebar-cta"
+            style="
+              background: white;
+              color: var(--primary);
+              border-radius: 8px;
+              padding: 12px 20px;
+              font-weight: 800;
+              text-decoration: none;
+              display: block;
+            "
+            >Start Now — It's Free →</a
+          >
+        </div>
 
-  fetch('posts.json')
-    .then(r => r.json())
-    .then(posts => {
-      const post = posts.find(p => String(p.id) === String(postId)) || posts[0];
-      if (!post) return;
+        <div class="sidebar-card">
+          <h3>Related Articles</h3>
+          <div id="relatedPosts">Loading...</div>
+        </div>
 
-      // SEO meta
-      document.getElementById('pageTitle').textContent = post.title + ' | QuickInvoiceFree Blog';
-      document.getElementById('pageDesc').content = post.summary;
-      document.getElementById('ogTitle').content = post.title;
-      document.getElementById('ogDesc').content = post.summary;
-      document.getElementById('ogImage').content = post.heroImage;
+        <div style="max-width: 320px">
+          <div
+            class="ad-banner"
+            style="height: 280px; flex-direction: column; gap: 8px"
+          >
+            <span>📢</span>
+            <span>Advertisement</span>
+            <span style="font-size: 11px">Google AdSense 300×250</span>
+          </div>
+        </div>
+      </aside>
+    </div>
 
-      // Hero
-      document.getElementById('postHero').innerHTML = `
+    <div style="max-width: 1200px; margin: 0 auto; padding: 0 24px 48px">
+      <div class="ad-banner">📢 Advertisement — Google AdSense 728×90</div>
+    </div>
+
+    <footer>
+      <div class="footer-logo">⚡ QuickInvoiceFree</div>
+      <p style="margin-bottom: 16px">
+        Free invoice generator for freelancers and small businesses.
+      </p>
+      <div>
+        <a href="index.html">Invoice Generator</a>
+        <a href="blog.html">Blog</a>
+        <a href="about.html">About</a>
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <p style="margin-top: 24px; color: #475569">
+        © 2025 QuickInvoiceFree.com
+      </p>
+    </footer>
+
+    <script>
+      const params = new URLSearchParams(window.location.search);
+      const postId = params.get("id") || "1";
+
+      fetch("posts.json")
+        .then((r) => r.json())
+        .then((posts) => {
+          const post =
+            posts.find((p) => String(p.id) === String(postId)) || posts[0];
+          if (!post) return;
+
+          // SEO meta
+          document.getElementById("pageTitle").textContent =
+            post.title + " | QuickInvoiceFree Blog";
+          document.getElementById("pageDesc").content = post.summary;
+          document.getElementById("ogTitle").content = post.title;
+          document.getElementById("ogDesc").content = post.summary;
+          document.getElementById("ogImage").content = post.heroImage;
+
+          // Hero
+          document.getElementById("postHero").innerHTML = `
         <div class="post-hero">
           <img src="${post.heroImage}" alt="${post.title}" />
           <div class="post-hero-overlay">
@@ -181,8 +504,8 @@
           </div>
         </div>`;
 
-      // Body
-      document.getElementById('postBody').innerHTML = `
+          // Body
+          document.getElementById("postBody").innerHTML = `
         <a href="blog.html" class="back-link">← Back to Blog</a>
         ${post.content}
         <div style="margin-top:40px;padding-top:24px;border-top:1px solid #E2E8F0;text-align:center">
@@ -190,17 +513,23 @@
           <a href="index.html" style="display:inline-block;background:#1A56DB;color:white;padding:14px 32px;border-radius:10px;font-weight:700;text-decoration:none;font-family:'Syne',sans-serif">Create Free Invoice Now →</a>
         </div>`;
 
-      // Related
-      const related = posts.filter(p => String(p.id) !== String(postId)).slice(0, 4);
-      document.getElementById('relatedPosts').innerHTML = related.map(p => `
+          // Related
+          const related = posts
+            .filter((p) => String(p.id) !== String(postId))
+            .slice(0, 4);
+          document.getElementById("relatedPosts").innerHTML = related
+            .map(
+              (p) => `
         <a href="post.html?id=${p.id}" class="related-post">
           <img src="${p.heroImage}" alt="${p.title}" loading="lazy" />
           <div>
             <div class="related-post-title">${p.title}</div>
             <div class="related-post-date">${p.date}</div>
           </div>
-        </a>`).join('');
-    });
-</script>
-</body>
+        </a>`,
+            )
+            .join("");
+        });
+    </script>
+  </body>
 </html>

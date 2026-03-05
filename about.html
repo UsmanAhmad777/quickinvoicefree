@@ -1,90 +1,320 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>About Us | QuickInvoiceFree – Free Invoice Generator</title>
-  <meta name="description" content="Learn about QuickInvoiceFree — a free invoice generator built for freelancers and small businesses. Create professional PDF invoices instantly with no signup." />
-  <meta name="robots" content="index, follow" />
-  <link rel="canonical" href="https://quickinvoicefree.com/about.html" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Nunito+Sans:wght@300;400;600;700&display=swap" rel="stylesheet" />
-  <style>
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-    :root { --primary: #1A56DB; --primary-light: #EFF6FF; --dark: #0F172A; --dark2: #1E293B; --text: #334155; --muted: #64748B; --border: #E2E8F0; --white: #FFFFFF; --bg: #F8FAFC; }
-    body { font-family: 'Nunito Sans', sans-serif; background: var(--bg); color: var(--text); }
-    h1,h2,h3 { font-family: 'Syne', sans-serif; color: var(--dark); }
-    nav { background: var(--white); border-bottom: 1px solid var(--border); position: sticky; top: 0; z-index: 100; padding: 0 24px; }
-    .nav-inner { max-width: 1200px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; height: 64px; }
-    .nav-logo { font-family: 'Syne', sans-serif; font-weight: 800; font-size: 20px; color: var(--primary); text-decoration: none; }
-    .nav-logo span { color: var(--dark); }
-    .nav-links { display: flex; gap: 8px; }
-    .nav-links a { text-decoration: none; color: var(--text); font-weight: 600; padding: 8px 14px; border-radius: 8px; font-size: 14px; transition: all 0.2s; }
-    .nav-links a:hover, .nav-links a.active { background: var(--primary-light); color: var(--primary); }
-    .page-hero { background: linear-gradient(135deg, var(--dark) 0%, var(--dark2) 100%); padding: 64px 24px; text-align: center; }
-    .page-hero h1 { color: white; font-size: 40px; margin-bottom: 14px; }
-    .page-hero p { color: #94A3B8; font-size: 18px; max-width: 560px; margin: 0 auto; }
-    .content { max-width: 860px; margin: 0 auto; padding: 60px 24px; }
-    .content h2 { font-size: 26px; margin: 36px 0 14px; }
-    .content p { color: var(--text); font-size: 16px; line-height: 1.85; margin-bottom: 16px; }
-    .values-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; margin: 32px 0; }
-    .value-card { background: var(--white); border-radius: 14px; padding: 28px; border: 1.5px solid var(--border); text-align: center; }
-    .value-icon { font-size: 36px; margin-bottom: 12px; }
-    .value-card h3 { font-size: 17px; margin-bottom: 8px; }
-    .value-card p { font-size: 14px; color: var(--muted); }
-    .cta-box { background: var(--primary); color: white; border-radius: 16px; padding: 40px; text-align: center; margin-top: 48px; }
-    .cta-box h2 { color: white; margin-bottom: 12px; }
-    .cta-box p { color: rgba(255,255,255,0.8); margin-bottom: 24px; }
-    .cta-btn { display: inline-block; background: white; color: var(--primary); padding: 14px 32px; border-radius: 10px; font-weight: 800; text-decoration: none; font-family: 'Syne', sans-serif; }
-    footer { background: var(--dark); color: #94A3B8; padding: 40px 24px; text-align: center; font-size: 14px; }
-    footer a { color: #64748B; text-decoration: none; margin: 0 12px; }
-    .footer-logo { font-family: 'Syne',sans-serif; font-weight: 800; color: white; font-size: 20px; margin-bottom: 16px; }
-    @media (max-width: 600px) { .values-grid { grid-template-columns: 1fr; } .nav-links a:not(.active) { display: none; } }
-  </style>
-</head>
-<body>
-<nav>
-  <div class="nav-inner">
-    <a href="index.html" class="nav-logo">⚡ Quick<span>InvoiceFree</span></a>
-    <div class="nav-links">
-      <a href="index.html">Invoice Generator</a>
-      <a href="expense.html">Expense Tracker</a>
-      <a href="blog.html">Blog</a>
-      <a href="about.html" class="active">About</a>
-      <a href="contact.html">Contact</a>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-6RW8VLX5DH"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-6RW8VLX5DH");
+    </script>
+    <title>About Us | QuickInvoiceFree – Free Invoice Generator</title>
+    <meta
+      name="description"
+      content="Learn about QuickInvoiceFree — a free invoice generator built for freelancers and small businesses. Create professional PDF invoices instantly with no signup."
+    />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://quickinvoicefree.com/about.html" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Nunito+Sans:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      *,
+      *::before,
+      *::after {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      :root {
+        --primary: #1a56db;
+        --primary-light: #eff6ff;
+        --dark: #0f172a;
+        --dark2: #1e293b;
+        --text: #334155;
+        --muted: #64748b;
+        --border: #e2e8f0;
+        --white: #ffffff;
+        --bg: #f8fafc;
+      }
+      body {
+        font-family: "Nunito Sans", sans-serif;
+        background: var(--bg);
+        color: var(--text);
+      }
+      h1,
+      h2,
+      h3 {
+        font-family: "Syne", sans-serif;
+        color: var(--dark);
+      }
+      nav {
+        background: var(--white);
+        border-bottom: 1px solid var(--border);
+        position: sticky;
+        top: 0;
+        z-index: 100;
+        padding: 0 24px;
+      }
+      .nav-inner {
+        max-width: 1200px;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 64px;
+      }
+      .nav-logo {
+        font-family: "Syne", sans-serif;
+        font-weight: 800;
+        font-size: 20px;
+        color: var(--primary);
+        text-decoration: none;
+      }
+      .nav-logo span {
+        color: var(--dark);
+      }
+      .nav-links {
+        display: flex;
+        gap: 8px;
+      }
+      .nav-links a {
+        text-decoration: none;
+        color: var(--text);
+        font-weight: 600;
+        padding: 8px 14px;
+        border-radius: 8px;
+        font-size: 14px;
+        transition: all 0.2s;
+      }
+      .nav-links a:hover,
+      .nav-links a.active {
+        background: var(--primary-light);
+        color: var(--primary);
+      }
+      .page-hero {
+        background: linear-gradient(135deg, var(--dark) 0%, var(--dark2) 100%);
+        padding: 64px 24px;
+        text-align: center;
+      }
+      .page-hero h1 {
+        color: white;
+        font-size: 40px;
+        margin-bottom: 14px;
+      }
+      .page-hero p {
+        color: #94a3b8;
+        font-size: 18px;
+        max-width: 560px;
+        margin: 0 auto;
+      }
+      .content {
+        max-width: 860px;
+        margin: 0 auto;
+        padding: 60px 24px;
+      }
+      .content h2 {
+        font-size: 26px;
+        margin: 36px 0 14px;
+      }
+      .content p {
+        color: var(--text);
+        font-size: 16px;
+        line-height: 1.85;
+        margin-bottom: 16px;
+      }
+      .values-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 24px;
+        margin: 32px 0;
+      }
+      .value-card {
+        background: var(--white);
+        border-radius: 14px;
+        padding: 28px;
+        border: 1.5px solid var(--border);
+        text-align: center;
+      }
+      .value-icon {
+        font-size: 36px;
+        margin-bottom: 12px;
+      }
+      .value-card h3 {
+        font-size: 17px;
+        margin-bottom: 8px;
+      }
+      .value-card p {
+        font-size: 14px;
+        color: var(--muted);
+      }
+      .cta-box {
+        background: var(--primary);
+        color: white;
+        border-radius: 16px;
+        padding: 40px;
+        text-align: center;
+        margin-top: 48px;
+      }
+      .cta-box h2 {
+        color: white;
+        margin-bottom: 12px;
+      }
+      .cta-box p {
+        color: rgba(255, 255, 255, 0.8);
+        margin-bottom: 24px;
+      }
+      .cta-btn {
+        display: inline-block;
+        background: white;
+        color: var(--primary);
+        padding: 14px 32px;
+        border-radius: 10px;
+        font-weight: 800;
+        text-decoration: none;
+        font-family: "Syne", sans-serif;
+      }
+      footer {
+        background: var(--dark);
+        color: #94a3b8;
+        padding: 40px 24px;
+        text-align: center;
+        font-size: 14px;
+      }
+      footer a {
+        color: #64748b;
+        text-decoration: none;
+        margin: 0 12px;
+      }
+      .footer-logo {
+        font-family: "Syne", sans-serif;
+        font-weight: 800;
+        color: white;
+        font-size: 20px;
+        margin-bottom: 16px;
+      }
+      @media (max-width: 600px) {
+        .values-grid {
+          grid-template-columns: 1fr;
+        }
+        .nav-links a:not(.active) {
+          display: none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <div class="nav-inner">
+        <a href="index.html" class="nav-logo"
+          >⚡ Quick<span>InvoiceFree</span></a
+        >
+        <div class="nav-links">
+          <a href="index.html">Invoice Generator</a>
+          <a href="expense.html">Expense Tracker</a>
+          <a href="blog.html">Blog</a>
+          <a href="about.html" class="active">About</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </div>
+    </nav>
+    <section class="page-hero">
+      <h1>About QuickInvoiceFree</h1>
+      <p>
+        We built the free invoice tool we always wished existed — fast, simple,
+        and genuinely free.
+      </p>
+    </section>
+    <div class="content">
+      <h2>Our Mission</h2>
+      <p>
+        QuickInvoiceFree was built with one goal: to give freelancers and small
+        business owners a professional invoice generator that works instantly,
+        requires no signup, and costs absolutely nothing to use.
+      </p>
+      <p>
+        We believe that creating a professional invoice should take less than
+        two minutes. You should not need to sign up for expensive software,
+        learn complicated tools, or pay monthly fees just to bill your clients.
+        Invoicing is a basic business function — and basic business functions
+        should be free.
+      </p>
+      <h2>Why We Built This</h2>
+      <p>
+        As freelancers ourselves, we got tired of being forced to create
+        accounts, enter credit card details for "free trials," or use clunky,
+        outdated invoice templates just to send a simple bill. We built
+        QuickInvoiceFree to be everything we wanted — instant, professional,
+        private, and genuinely free.
+      </p>
+      <p>
+        Your invoice data is processed entirely in your browser. We never see,
+        store, or collect any of the information you enter. No databases, no
+        servers processing your client data — just a fast, clean tool that works
+        for you.
+      </p>
+      <h2>Our Values</h2>
+      <div class="values-grid">
+        <div class="value-card">
+          <div class="value-icon">⚡</div>
+          <h3>Speed First</h3>
+          <p>
+            We optimize everything for speed. Your invoice should be ready
+            before your coffee gets cold.
+          </p>
+        </div>
+        <div class="value-card">
+          <div class="value-icon">🔒</div>
+          <h3>Privacy by Design</h3>
+          <p>
+            Your data never leaves your browser. We have zero access to your
+            invoice information.
+          </p>
+        </div>
+        <div class="value-card">
+          <div class="value-icon">💸</div>
+          <h3>Free Forever</h3>
+          <p>
+            We are funded by non-intrusive advertising so the tool stays
+            completely free for everyone.
+          </p>
+        </div>
+      </div>
+      <h2>Who Uses QuickInvoiceFree?</h2>
+      <p>
+        Our tool is used by freelance designers, developers, writers,
+        photographers, consultants, tradespeople, coaches, and small business
+        owners around the world. Whether you send one invoice a month or fifty,
+        QuickInvoiceFree handles it without any friction.
+      </p>
+      <div class="cta-box">
+        <h2>Ready to Create Your First Invoice?</h2>
+        <p>Join thousands of freelancers using QuickInvoiceFree every day.</p>
+        <a href="index.html" class="cta-btn">Create Free Invoice Now →</a>
+      </div>
     </div>
-  </div>
-</nav>
-<section class="page-hero">
-  <h1>About QuickInvoiceFree</h1>
-  <p>We built the free invoice tool we always wished existed — fast, simple, and genuinely free.</p>
-</section>
-<div class="content">
-  <h2>Our Mission</h2>
-  <p>QuickInvoiceFree was built with one goal: to give freelancers and small business owners a professional invoice generator that works instantly, requires no signup, and costs absolutely nothing to use.</p>
-  <p>We believe that creating a professional invoice should take less than two minutes. You should not need to sign up for expensive software, learn complicated tools, or pay monthly fees just to bill your clients. Invoicing is a basic business function — and basic business functions should be free.</p>
-  <h2>Why We Built This</h2>
-  <p>As freelancers ourselves, we got tired of being forced to create accounts, enter credit card details for "free trials," or use clunky, outdated invoice templates just to send a simple bill. We built QuickInvoiceFree to be everything we wanted — instant, professional, private, and genuinely free.</p>
-  <p>Your invoice data is processed entirely in your browser. We never see, store, or collect any of the information you enter. No databases, no servers processing your client data — just a fast, clean tool that works for you.</p>
-  <h2>Our Values</h2>
-  <div class="values-grid">
-    <div class="value-card"><div class="value-icon">⚡</div><h3>Speed First</h3><p>We optimize everything for speed. Your invoice should be ready before your coffee gets cold.</p></div>
-    <div class="value-card"><div class="value-icon">🔒</div><h3>Privacy by Design</h3><p>Your data never leaves your browser. We have zero access to your invoice information.</p></div>
-    <div class="value-card"><div class="value-icon">💸</div><h3>Free Forever</h3><p>We are funded by non-intrusive advertising so the tool stays completely free for everyone.</p></div>
-  </div>
-  <h2>Who Uses QuickInvoiceFree?</h2>
-  <p>Our tool is used by freelance designers, developers, writers, photographers, consultants, tradespeople, coaches, and small business owners around the world. Whether you send one invoice a month or fifty, QuickInvoiceFree handles it without any friction.</p>
-  <div class="cta-box">
-    <h2>Ready to Create Your First Invoice?</h2>
-    <p>Join thousands of freelancers using QuickInvoiceFree every day.</p>
-    <a href="index.html" class="cta-btn">Create Free Invoice Now →</a>
-  </div>
-</div>
-<footer>
-  <div class="footer-logo">⚡ QuickInvoiceFree</div>
-  <div><a href="index.html">Invoice Generator</a><a href="blog.html">Blog</a><a href="about.html">About</a><a href="privacy.html">Privacy Policy</a><a href="contact.html">Contact</a></div>
-  <p style="margin-top:24px;color:#475569">© 2025 QuickInvoiceFree.com</p>
-</footer>
-</body>
+    <footer>
+      <div class="footer-logo">⚡ QuickInvoiceFree</div>
+      <div>
+        <a href="index.html">Invoice Generator</a><a href="blog.html">Blog</a
+        ><a href="about.html">About</a><a href="privacy.html">Privacy Policy</a
+        ><a href="contact.html">Contact</a>
+      </div>
+      <p style="margin-top: 24px; color: #475569">
+        © 2025 QuickInvoiceFree.com
+      </p>
+    </footer>
+  </body>
 </html>

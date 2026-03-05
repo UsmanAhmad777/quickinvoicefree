@@ -1,94 +1,285 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Privacy Policy | QuickInvoiceFree</title>
-  <meta name="description" content="QuickInvoiceFree privacy policy. We never store your invoice data. All processing happens locally in your browser." />
-  <meta name="robots" content="index, follow" />
-  <link rel="canonical" href="https://quickinvoicefree.com/privacy.html" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=Nunito+Sans:wght@400;600;700&display=swap" rel="stylesheet" />
-  <style>
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-    :root { --primary: #1A56DB; --primary-light: #EFF6FF; --dark: #0F172A; --text: #334155; --muted: #64748B; --border: #E2E8F0; --white: #FFFFFF; --bg: #F8FAFC; }
-    body { font-family: 'Nunito Sans', sans-serif; background: var(--bg); color: var(--text); }
-    h1,h2,h3 { font-family: 'Syne', sans-serif; color: var(--dark); }
-    nav { background: var(--white); border-bottom: 1px solid var(--border); padding: 0 24px; }
-    .nav-inner { max-width: 1200px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; height: 64px; }
-    .nav-logo { font-family: 'Syne', sans-serif; font-weight: 800; font-size: 20px; color: var(--primary); text-decoration: none; }
-    .nav-logo span { color: var(--dark); }
-    .nav-links { display: flex; gap: 8px; }
-    .nav-links a { text-decoration: none; color: var(--text); font-weight: 600; padding: 8px 14px; border-radius: 8px; font-size: 14px; }
-    .nav-links a:hover { background: var(--primary-light); color: var(--primary); }
-    .page-hero { background: linear-gradient(135deg, var(--dark) 0%, #1E293B 100%); padding: 48px 24px; text-align: center; }
-    .page-hero h1 { color: white; font-size: 36px; margin-bottom: 10px; }
-    .page-hero p { color: #94A3B8; }
-    .content { max-width: 800px; margin: 0 auto; padding: 60px 24px; background: var(--white); margin-top: 40px; border-radius: 16px; box-shadow: 0 4px 24px rgba(15,23,42,0.08); margin-bottom: 40px; }
-    .content h2 { font-size: 22px; margin: 32px 0 12px; }
-    .content h2:first-child { margin-top: 0; }
-    .content p { color: var(--text); font-size: 15px; line-height: 1.85; margin-bottom: 14px; }
-    .content ul { padding-left: 20px; margin-bottom: 14px; }
-    .content li { font-size: 15px; line-height: 1.8; color: var(--text); margin-bottom: 6px; }
-    .highlight { background: var(--primary-light); border-left: 4px solid var(--primary); padding: 16px 20px; border-radius: 0 10px 10px 0; margin: 20px 0; }
-    footer { background: var(--dark); color: #94A3B8; padding: 40px 24px; text-align: center; font-size: 14px; }
-    footer a { color: #64748B; text-decoration: none; margin: 0 12px; }
-    .footer-logo { font-family: 'Syne',sans-serif; font-weight: 800; color: white; font-size: 20px; margin-bottom: 16px; }
-  </style>
-</head>
-<body>
-<nav>
-  <div class="nav-inner">
-    <a href="index.html" class="nav-logo">⚡ Quick<span>InvoiceFree</span></a>
-    <div class="nav-links">
-      <a href="index.html">Invoice Generator</a>
-      <a href="blog.html">Blog</a>
-      <a href="about.html">About</a>
-      <a href="contact.html">Contact</a>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-6RW8VLX5DH"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-6RW8VLX5DH");
+    </script>
+    <title>Privacy Policy | QuickInvoiceFree</title>
+    <meta
+      name="description"
+      content="QuickInvoiceFree privacy policy. We never store your invoice data. All processing happens locally in your browser."
+    />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://quickinvoicefree.com/privacy.html" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=Nunito+Sans:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      *,
+      *::before,
+      *::after {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      :root {
+        --primary: #1a56db;
+        --primary-light: #eff6ff;
+        --dark: #0f172a;
+        --text: #334155;
+        --muted: #64748b;
+        --border: #e2e8f0;
+        --white: #ffffff;
+        --bg: #f8fafc;
+      }
+      body {
+        font-family: "Nunito Sans", sans-serif;
+        background: var(--bg);
+        color: var(--text);
+      }
+      h1,
+      h2,
+      h3 {
+        font-family: "Syne", sans-serif;
+        color: var(--dark);
+      }
+      nav {
+        background: var(--white);
+        border-bottom: 1px solid var(--border);
+        padding: 0 24px;
+      }
+      .nav-inner {
+        max-width: 1200px;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 64px;
+      }
+      .nav-logo {
+        font-family: "Syne", sans-serif;
+        font-weight: 800;
+        font-size: 20px;
+        color: var(--primary);
+        text-decoration: none;
+      }
+      .nav-logo span {
+        color: var(--dark);
+      }
+      .nav-links {
+        display: flex;
+        gap: 8px;
+      }
+      .nav-links a {
+        text-decoration: none;
+        color: var(--text);
+        font-weight: 600;
+        padding: 8px 14px;
+        border-radius: 8px;
+        font-size: 14px;
+      }
+      .nav-links a:hover {
+        background: var(--primary-light);
+        color: var(--primary);
+      }
+      .page-hero {
+        background: linear-gradient(135deg, var(--dark) 0%, #1e293b 100%);
+        padding: 48px 24px;
+        text-align: center;
+      }
+      .page-hero h1 {
+        color: white;
+        font-size: 36px;
+        margin-bottom: 10px;
+      }
+      .page-hero p {
+        color: #94a3b8;
+      }
+      .content {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 60px 24px;
+        background: var(--white);
+        margin-top: 40px;
+        border-radius: 16px;
+        box-shadow: 0 4px 24px rgba(15, 23, 42, 0.08);
+        margin-bottom: 40px;
+      }
+      .content h2 {
+        font-size: 22px;
+        margin: 32px 0 12px;
+      }
+      .content h2:first-child {
+        margin-top: 0;
+      }
+      .content p {
+        color: var(--text);
+        font-size: 15px;
+        line-height: 1.85;
+        margin-bottom: 14px;
+      }
+      .content ul {
+        padding-left: 20px;
+        margin-bottom: 14px;
+      }
+      .content li {
+        font-size: 15px;
+        line-height: 1.8;
+        color: var(--text);
+        margin-bottom: 6px;
+      }
+      .highlight {
+        background: var(--primary-light);
+        border-left: 4px solid var(--primary);
+        padding: 16px 20px;
+        border-radius: 0 10px 10px 0;
+        margin: 20px 0;
+      }
+      footer {
+        background: var(--dark);
+        color: #94a3b8;
+        padding: 40px 24px;
+        text-align: center;
+        font-size: 14px;
+      }
+      footer a {
+        color: #64748b;
+        text-decoration: none;
+        margin: 0 12px;
+      }
+      .footer-logo {
+        font-family: "Syne", sans-serif;
+        font-weight: 800;
+        color: white;
+        font-size: 20px;
+        margin-bottom: 16px;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <div class="nav-inner">
+        <a href="index.html" class="nav-logo"
+          >⚡ Quick<span>InvoiceFree</span></a
+        >
+        <div class="nav-links">
+          <a href="index.html">Invoice Generator</a>
+          <a href="blog.html">Blog</a>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </div>
+    </nav>
+    <section class="page-hero">
+      <h1>Privacy Policy</h1>
+      <p>Last updated: March 5, 2025</p>
+    </section>
+    <div style="max-width: 860px; margin: 40px auto; padding: 0 24px">
+      <div class="content">
+        <div class="highlight">
+          <strong>🔒 Short version:</strong> We do not collect, store, or
+          transmit any invoice data you enter. All processing happens locally in
+          your browser. We use Google AdSense for advertising and Google
+          Analytics for traffic data only.
+        </div>
+        <h2>1. Information We Collect</h2>
+        <p>
+          QuickInvoiceFree does not collect or store any personal information
+          that you enter into the invoice generator. All invoice data (business
+          names, client details, amounts, etc.) is processed entirely within
+          your web browser and is never transmitted to our servers.
+        </p>
+        <p>
+          We may collect the following non-personal information automatically:
+        </p>
+        <ul>
+          <li>Pages visited on our website (via Google Analytics)</li>
+          <li>Browser type and device type (aggregated, anonymous)</li>
+          <li>Country of origin (aggregated, anonymous)</li>
+        </ul>
+        <h2>2. Invoice Data Privacy</h2>
+        <p>
+          All data you enter into the invoice generator is processed locally in
+          your browser using JavaScript. We do not have access to any invoice
+          details, client names, amounts, or business information you enter.
+          This data is never sent to our servers.
+        </p>
+        <h2>3. Advertising</h2>
+        <p>
+          We use Google AdSense to display advertisements on our website. Google
+          AdSense may use cookies to show you relevant ads based on your
+          browsing history. For more information about how Google uses data,
+          please visit Google's Privacy Policy at policies.google.com/privacy.
+        </p>
+        <p>
+          You can opt out of personalized advertising by visiting Google's Ad
+          Settings at adssettings.google.com.
+        </p>
+        <h2>4. Cookies</h2>
+        <p>We use cookies for the following purposes:</p>
+        <ul>
+          <li>Google Analytics — to understand how visitors use our website</li>
+          <li>Google AdSense — to display relevant advertisements</li>
+        </ul>
+        <p>
+          You can disable cookies in your browser settings. Note that disabling
+          cookies may affect the functionality of some features.
+        </p>
+        <h2>5. Third-Party Services</h2>
+        <p>
+          We use the following third-party services: Google Analytics (traffic
+          analysis), Google AdSense (advertising), Google Fonts (typography),
+          Unsplash (stock photography). Each of these services has its own
+          privacy policy.
+        </p>
+        <h2 id="terms">6. Terms of Use</h2>
+        <p>
+          QuickInvoiceFree provides a free invoice generation tool for personal
+          and commercial use. You may use this tool to create invoices for your
+          business. We make no guarantees about the legal validity of invoices
+          created with our tool in your specific jurisdiction. You are
+          responsible for ensuring your invoices comply with local tax and
+          business laws.
+        </p>
+        <h2>7. Changes to This Policy</h2>
+        <p>
+          We may update this privacy policy from time to time. Changes will be
+          posted on this page with an updated date. Continued use of our service
+          after changes constitutes acceptance of the updated policy.
+        </p>
+        <h2>8. Contact Us</h2>
+        <p>
+          If you have any questions about this privacy policy, please contact us
+          via our
+          <a href="contact.html" style="color: var(--primary)">contact page</a>.
+        </p>
+      </div>
     </div>
-  </div>
-</nav>
-<section class="page-hero">
-  <h1>Privacy Policy</h1>
-  <p>Last updated: March 5, 2025</p>
-</section>
-<div style="max-width:860px;margin:40px auto;padding:0 24px">
-  <div class="content">
-    <div class="highlight"><strong>🔒 Short version:</strong> We do not collect, store, or transmit any invoice data you enter. All processing happens locally in your browser. We use Google AdSense for advertising and Google Analytics for traffic data only.</div>
-    <h2>1. Information We Collect</h2>
-    <p>QuickInvoiceFree does not collect or store any personal information that you enter into the invoice generator. All invoice data (business names, client details, amounts, etc.) is processed entirely within your web browser and is never transmitted to our servers.</p>
-    <p>We may collect the following non-personal information automatically:</p>
-    <ul>
-      <li>Pages visited on our website (via Google Analytics)</li>
-      <li>Browser type and device type (aggregated, anonymous)</li>
-      <li>Country of origin (aggregated, anonymous)</li>
-    </ul>
-    <h2>2. Invoice Data Privacy</h2>
-    <p>All data you enter into the invoice generator is processed locally in your browser using JavaScript. We do not have access to any invoice details, client names, amounts, or business information you enter. This data is never sent to our servers.</p>
-    <h2>3. Advertising</h2>
-    <p>We use Google AdSense to display advertisements on our website. Google AdSense may use cookies to show you relevant ads based on your browsing history. For more information about how Google uses data, please visit Google's Privacy Policy at policies.google.com/privacy.</p>
-    <p>You can opt out of personalized advertising by visiting Google's Ad Settings at adssettings.google.com.</p>
-    <h2>4. Cookies</h2>
-    <p>We use cookies for the following purposes:</p>
-    <ul>
-      <li>Google Analytics — to understand how visitors use our website</li>
-      <li>Google AdSense — to display relevant advertisements</li>
-    </ul>
-    <p>You can disable cookies in your browser settings. Note that disabling cookies may affect the functionality of some features.</p>
-    <h2>5. Third-Party Services</h2>
-    <p>We use the following third-party services: Google Analytics (traffic analysis), Google AdSense (advertising), Google Fonts (typography), Unsplash (stock photography). Each of these services has its own privacy policy.</p>
-    <h2 id="terms">6. Terms of Use</h2>
-    <p>QuickInvoiceFree provides a free invoice generation tool for personal and commercial use. You may use this tool to create invoices for your business. We make no guarantees about the legal validity of invoices created with our tool in your specific jurisdiction. You are responsible for ensuring your invoices comply with local tax and business laws.</p>
-    <h2>7. Changes to This Policy</h2>
-    <p>We may update this privacy policy from time to time. Changes will be posted on this page with an updated date. Continued use of our service after changes constitutes acceptance of the updated policy.</p>
-    <h2>8. Contact Us</h2>
-    <p>If you have any questions about this privacy policy, please contact us via our <a href="contact.html" style="color:var(--primary)">contact page</a>.</p>
-  </div>
-</div>
-<footer>
-  <div class="footer-logo">⚡ QuickInvoiceFree</div>
-  <div><a href="index.html">Invoice Generator</a><a href="blog.html">Blog</a><a href="about.html">About</a><a href="privacy.html">Privacy</a><a href="contact.html">Contact</a></div>
-  <p style="margin-top:24px;color:#475569">© 2025 QuickInvoiceFree.com</p>
-</footer>
-</body>
+    <footer>
+      <div class="footer-logo">⚡ QuickInvoiceFree</div>
+      <div>
+        <a href="index.html">Invoice Generator</a><a href="blog.html">Blog</a
+        ><a href="about.html">About</a><a href="privacy.html">Privacy</a
+        ><a href="contact.html">Contact</a>
+      </div>
+      <p style="margin-top: 24px; color: #475569">
+        © 2025 QuickInvoiceFree.com
+      </p>
+    </footer>
+  </body>
 </html>
