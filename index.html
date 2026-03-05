@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- Google tag (gtag.js) -->
+    <!-- Google Analytics -->
     <script
       async
       src="https://www.googletagmanager.com/gtag/js?id=G-6RW8VLX5DH"
@@ -14,7 +14,6 @@
         dataLayer.push(arguments);
       }
       gtag("js", new Date());
-
       gtag("config", "G-6RW8VLX5DH");
     </script>
     <title>
@@ -31,8 +30,6 @@
     />
     <meta name="robots" content="index, follow" />
     <link rel="canonical" href="https://quickinvoicefree.com/" />
-
-    <!-- Open Graph -->
     <meta
       property="og:title"
       content="Free Invoice Generator – Create & Download PDF Invoices Instantly"
@@ -48,8 +45,6 @@
     <meta property="og:url" content="https://quickinvoicefree.com/" />
     <meta property="og:type" content="website" />
     <meta name="twitter:card" content="summary_large_image" />
-
-    <!-- Schema.org Structured Data -->
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
@@ -62,8 +57,6 @@
         "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" }
       }
     </script>
-
-    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -79,7 +72,6 @@
         margin: 0;
         padding: 0;
       }
-
       :root {
         --primary: #1a56db;
         --primary-dark: #1340a8;
@@ -92,12 +84,9 @@
         --white: #ffffff;
         --bg: #f8fafc;
         --accent: #f59e0b;
-        --success: #10b981;
         --radius: 12px;
         --shadow: 0 4px 24px rgba(15, 23, 42, 0.08);
-        --shadow-lg: 0 12px 48px rgba(15, 23, 42, 0.14);
       }
-
       body {
         font-family: "Nunito Sans", sans-serif;
         background: var(--bg);
@@ -105,7 +94,6 @@
         line-height: 1.6;
         font-size: 15px;
       }
-
       h1,
       h2,
       h3,
@@ -122,7 +110,7 @@
         position: sticky;
         top: 0;
         z-index: 100;
-        padding: 0 24px;
+        padding: 0 16px;
       }
       .nav-inner {
         max-width: 1200px;
@@ -130,73 +118,61 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
-        height: 64px;
+        height: 52px;
+        gap: 8px;
       }
       .nav-logo {
         font-family: "Syne", sans-serif;
         font-weight: 800;
-        font-size: 20px;
+        font-size: 16px;
         color: var(--primary);
         text-decoration: none;
-        display: flex;
-        align-items: center;
-        gap: 8px;
+        white-space: nowrap;
+        flex-shrink: 0;
       }
       .nav-logo span {
         color: var(--dark);
       }
       .nav-links {
         display: flex;
-        gap: 8px;
+        gap: 2px;
         align-items: center;
       }
       .nav-links a {
         text-decoration: none;
         color: var(--text);
         font-weight: 600;
-        padding: 8px 14px;
-        border-radius: 8px;
-        font-size: 14px;
+        padding: 5px 9px;
+        border-radius: 7px;
+        font-size: 12px;
         transition: all 0.2s;
+        white-space: nowrap;
       }
-      .nav-links a:hover {
+      .nav-links a:hover,
+      .nav-links a.active {
         background: var(--primary-light);
         color: var(--primary);
       }
-      .nav-links a.active {
-        color: var(--primary);
-      }
-      .nav-cta {
-        background: var(--primary);
-        color: var(--white) !important;
-        padding: 8px 18px !important;
-        border-radius: 8px;
-      }
-      .nav-cta:hover {
-        background: var(--primary-dark) !important;
-        color: var(--white) !important;
-      }
 
-      /* AD BANNER */
+      /* AD */
       .ad-banner {
         background: linear-gradient(135deg, #f1f5f9, #e2e8f0);
         border: 2px dashed #cbd5e1;
         border-radius: var(--radius);
-        padding: 16px;
         text-align: center;
         color: var(--muted);
-        font-size: 13px;
+        font-size: 12px;
         font-weight: 600;
         letter-spacing: 0.05em;
         text-transform: uppercase;
       }
       .ad-banner-top {
-        margin: 16px auto;
+        margin: 12px auto;
         max-width: 1200px;
-        padding: 0 24px;
+        padding: 0 16px;
       }
       .ad-banner-top .ad-banner {
-        height: 90px;
+        height: 80px;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -210,7 +186,7 @@
           var(--dark2) 50%,
           #1e3a5f 100%
         );
-        padding: 80px 24px 60px;
+        padding: 56px 16px 44px;
         text-align: center;
         position: relative;
         overflow: hidden;
@@ -243,18 +219,18 @@
         background: rgba(26, 86, 219, 0.2);
         border: 1px solid rgba(26, 86, 219, 0.4);
         color: #93c5fd;
-        padding: 6px 16px;
+        padding: 5px 14px;
         border-radius: 100px;
-        font-size: 13px;
+        font-size: 12px;
         font-weight: 700;
         letter-spacing: 0.05em;
-        margin-bottom: 24px;
+        margin-bottom: 18px;
       }
       .hero h1 {
-        font-size: clamp(32px, 5vw, 56px);
+        font-size: clamp(22px, 5vw, 52px);
         color: var(--white);
         font-weight: 800;
-        margin-bottom: 20px;
+        margin-bottom: 14px;
         line-height: 1.1;
       }
       .hero h1 em {
@@ -263,17 +239,17 @@
       }
       .hero p {
         color: #94a3b8;
-        font-size: 18px;
-        max-width: 580px;
-        margin: 0 auto 32px;
+        font-size: 15px;
+        max-width: 540px;
+        margin: 0 auto 20px;
         line-height: 1.7;
       }
       .hero-stats {
         display: flex;
-        gap: 32px;
+        gap: 16px;
         justify-content: center;
         flex-wrap: wrap;
-        margin-top: 40px;
+        margin-top: 24px;
       }
       .hero-stat {
         text-align: center;
@@ -281,104 +257,99 @@
       .hero-stat strong {
         display: block;
         font-family: "Syne", sans-serif;
-        font-size: 28px;
+        font-size: 20px;
         color: var(--white);
       }
       .hero-stat span {
         color: #64748b;
-        font-size: 13px;
+        font-size: 11px;
       }
 
-      /* MAIN TOOL */
+      /* TOOL */
       .tool-section {
         max-width: 1200px;
         margin: 0 auto;
-        padding: 48px 24px;
+        padding: 32px 16px;
       }
       .tool-header {
         text-align: center;
-        margin-bottom: 40px;
+        margin-bottom: 24px;
       }
       .tool-header h2 {
-        font-size: 32px;
-        margin-bottom: 12px;
+        font-size: 24px;
+        margin-bottom: 6px;
       }
       .tool-header p {
         color: var(--muted);
-        font-size: 16px;
+        font-size: 13px;
       }
-
       .tool-grid {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        gap: 28px;
+        gap: 18px;
         align-items: start;
       }
 
       /* FORM PANEL */
       .form-panel {
         background: var(--white);
-        border-radius: 16px;
+        border-radius: 14px;
         box-shadow: var(--shadow);
         overflow: hidden;
       }
       .form-panel-header {
         background: var(--primary);
-        padding: 20px 28px;
+        padding: 12px 18px;
         display: flex;
         align-items: center;
-        gap: 12px;
+        gap: 9px;
       }
       .form-panel-header h3 {
         color: var(--white);
-        font-size: 18px;
-      }
-      .form-panel-header svg {
-        color: rgba(255, 255, 255, 0.8);
+        font-size: 14px;
       }
       .form-body {
-        padding: 28px;
+        padding: 16px;
         display: flex;
         flex-direction: column;
-        gap: 24px;
+        gap: 16px;
       }
-
       .form-section-title {
         font-family: "Syne", sans-serif;
-        font-size: 13px;
+        font-size: 10px;
         font-weight: 700;
         text-transform: uppercase;
         letter-spacing: 0.08em;
         color: var(--primary);
-        margin-bottom: 12px;
-        padding-bottom: 8px;
+        margin-bottom: 9px;
+        padding-bottom: 5px;
         border-bottom: 2px solid var(--primary-light);
       }
       .form-row {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        gap: 12px;
+        gap: 9px;
       }
       .form-group {
         display: flex;
         flex-direction: column;
-        gap: 6px;
+        gap: 3px;
       }
       .form-group.full {
-        grid-column: 1 / -1;
+        grid-column: 1/-1;
       }
       label {
-        font-size: 13px;
+        font-size: 10px;
         font-weight: 700;
         color: var(--dark2);
       }
       input,
       textarea,
       select {
-        padding: 10px 14px;
+        padding: 7px 10px;
         border: 1.5px solid var(--border);
-        border-radius: 8px;
-        font-size: 14px;
+        border-radius: 7px;
+        font-size: 12px;
         font-family: "Nunito Sans", sans-serif;
         color: var(--dark);
         background: var(--white);
@@ -396,46 +367,91 @@
       }
       textarea {
         resize: vertical;
-        min-height: 80px;
+        min-height: 64px;
       }
 
-      /* ITEMS TABLE */
+      /* LOGO UPLOAD */
+      .logo-upload-area {
+        border: 2px dashed var(--border);
+        border-radius: 8px;
+        padding: 7px;
+        text-align: center;
+        cursor: pointer;
+        transition: all 0.2s;
+        background: var(--bg);
+        position: relative;
+        min-height: 46px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .logo-upload-area:hover {
+        border-color: var(--primary);
+        background: var(--primary-light);
+      }
+      .logo-upload-area input[type="file"] {
+        position: absolute;
+        inset: 0;
+        opacity: 0;
+        cursor: pointer;
+        width: 100%;
+        height: 100%;
+      }
+      .logo-preview {
+        max-height: 32px;
+        max-width: 85px;
+        object-fit: contain;
+        display: none;
+      }
+      .logo-placeholder {
+        font-size: 10px;
+        color: var(--muted);
+        font-weight: 600;
+        pointer-events: none;
+      }
+      .logo-placeholder span {
+        display: block;
+        font-size: 15px;
+        margin-bottom: 1px;
+      }
+
+      /* ITEMS */
       .items-table {
         width: 100%;
         border-collapse: collapse;
       }
       .items-table thead th {
-        font-size: 12px;
+        font-size: 10px;
         font-weight: 700;
         text-transform: uppercase;
         letter-spacing: 0.06em;
         color: var(--muted);
-        padding: 8px 6px;
+        padding: 5px 3px;
         border-bottom: 2px solid var(--border);
         text-align: left;
       }
       .items-table td {
-        padding: 6px 4px;
+        padding: 3px 2px;
       }
       .items-table input {
-        padding: 8px 10px;
-        font-size: 13px;
+        padding: 6px 7px;
+        font-size: 11px;
       }
       .items-table .amount-cell {
         font-weight: 700;
         color: var(--primary);
-        padding: 8px 6px;
-        font-size: 13px;
-        min-width: 70px;
+        padding: 5px 3px;
+        font-size: 11px;
+        min-width: 55px;
       }
       .btn-remove {
         background: none;
         border: none;
         cursor: pointer;
         color: #ef4444;
-        font-size: 18px;
-        padding: 4px 8px;
-        border-radius: 6px;
+        font-size: 14px;
+        padding: 3px 4px;
+        border-radius: 4px;
         transition: background 0.2s;
       }
       .btn-remove:hover {
@@ -444,19 +460,19 @@
       .btn-add-item {
         display: flex;
         align-items: center;
-        gap: 8px;
+        gap: 5px;
         background: var(--primary-light);
         color: var(--primary);
         border: 2px dashed var(--primary);
-        padding: 10px 16px;
-        border-radius: 8px;
+        padding: 7px 10px;
+        border-radius: 7px;
         cursor: pointer;
         font-weight: 700;
-        font-size: 14px;
+        font-size: 11px;
         font-family: "Nunito Sans", sans-serif;
         width: 100%;
         justify-content: center;
-        margin-top: 8px;
+        margin-top: 5px;
         transition: all 0.2s;
       }
       .btn-add-item:hover {
@@ -467,203 +483,220 @@
       /* TOTALS */
       .totals-area {
         background: var(--bg);
-        border-radius: 12px;
-        padding: 16px;
-        margin-top: 8px;
+        border-radius: 9px;
+        padding: 10px;
+        margin-top: 6px;
       }
       .totals-row {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 6px 0;
+        padding: 3px 0;
         border-bottom: 1px solid var(--border);
-        font-size: 14px;
+        font-size: 12px;
       }
       .totals-row:last-child {
         border: none;
       }
       .totals-row.grand {
         font-family: "Syne", sans-serif;
-        font-size: 18px;
+        font-size: 14px;
         font-weight: 800;
         color: var(--dark);
-        margin-top: 4px;
+        margin-top: 2px;
       }
       .totals-row.grand span:last-child {
         color: var(--primary);
       }
 
-      /* ACTION BUTTONS */
+      /* BUTTONS */
       .action-btns {
         display: flex;
-        gap: 12px;
-        margin-top: 8px;
+        gap: 7px;
+        margin-top: 4px;
       }
       .btn-primary {
         flex: 1;
+        min-width: 0;
         background: var(--primary);
         color: var(--white);
         border: none;
-        padding: 14px 24px;
-        border-radius: 10px;
-        font-size: 15px;
+        padding: 10px 12px;
+        border-radius: 8px;
+        font-size: 12px;
         font-weight: 700;
         cursor: pointer;
         font-family: "Nunito Sans", sans-serif;
         display: flex;
         align-items: center;
         justify-content: center;
-        gap: 8px;
+        gap: 5px;
         transition: all 0.2s;
-        box-shadow: 0 4px 14px rgba(26, 86, 219, 0.3);
+        white-space: nowrap;
       }
       .btn-primary:hover {
         background: var(--primary-dark);
         transform: translateY(-1px);
-        box-shadow: 0 6px 20px rgba(26, 86, 219, 0.4);
       }
       .btn-secondary {
         background: var(--white);
         color: var(--dark);
         border: 2px solid var(--border);
-        padding: 14px 20px;
-        border-radius: 10px;
-        font-size: 15px;
+        padding: 10px 10px;
+        border-radius: 8px;
+        font-size: 11px;
         font-weight: 700;
         cursor: pointer;
         font-family: "Nunito Sans", sans-serif;
         display: flex;
         align-items: center;
-        gap: 8px;
+        gap: 4px;
         transition: all 0.2s;
+        white-space: nowrap;
       }
       .btn-secondary:hover {
         border-color: var(--primary);
         color: var(--primary);
       }
 
-      /* PREVIEW PANEL */
+      /* PREVIEW */
       .preview-panel {
         background: var(--white);
-        border-radius: 16px;
+        border-radius: 14px;
         box-shadow: var(--shadow);
         position: sticky;
-        top: 80px;
+        top: 64px;
         overflow: hidden;
       }
       .preview-panel-header {
         background: var(--bg);
-        padding: 16px 24px;
+        padding: 11px 16px;
         display: flex;
         align-items: center;
         justify-content: space-between;
         border-bottom: 1px solid var(--border);
       }
       .preview-panel-header h3 {
-        font-size: 15px;
+        font-size: 12px;
         color: var(--dark);
       }
       .preview-badge {
         background: #dcfce7;
         color: #166534;
-        font-size: 12px;
+        font-size: 10px;
         font-weight: 700;
-        padding: 4px 10px;
+        padding: 3px 7px;
         border-radius: 100px;
       }
       .invoice-preview {
-        padding: 32px;
-        min-height: 600px;
-        font-size: 13px;
+        padding: 22px;
+        min-height: 480px;
+        font-size: 12px;
       }
+
+      /* INVOICE ELEMENTS */
       .inv-header {
         display: flex;
         justify-content: space-between;
-        margin-bottom: 32px;
+        align-items: flex-start;
+        margin-bottom: 20px;
+        gap: 8px;
+      }
+      .inv-logo-area {
+        display: flex;
+        flex-direction: column;
+        gap: 3px;
+        max-width: 140px;
       }
       .inv-logo {
         font-family: "Syne", sans-serif;
-        font-size: 22px;
+        font-size: 15px;
         font-weight: 800;
         color: var(--primary);
+        word-break: break-word;
+      }
+      .inv-logo-img {
+        max-height: 44px;
+        max-width: 120px;
+        object-fit: contain;
+        display: none;
       }
       .inv-title-block {
         text-align: right;
+        flex-shrink: 0;
       }
       .inv-title {
         font-family: "Syne", sans-serif;
-        font-size: 32px;
+        font-size: 24px;
         font-weight: 800;
         color: var(--dark);
         letter-spacing: -0.02em;
       }
       .inv-number {
         color: var(--muted);
-        font-size: 13px;
-        margin-top: 4px;
+        font-size: 10px;
+        margin-top: 2px;
       }
       .inv-dates {
         display: flex;
-        gap: 24px;
+        gap: 14px;
         justify-content: flex-end;
-        margin-top: 8px;
+        margin-top: 4px;
       }
       .inv-date-item {
         text-align: right;
       }
       .inv-date-item span {
         display: block;
-        font-size: 11px;
+        font-size: 8px;
         text-transform: uppercase;
         letter-spacing: 0.06em;
         color: var(--muted);
       }
       .inv-date-item strong {
-        font-size: 13px;
+        font-size: 10px;
         color: var(--dark);
       }
-
       .inv-parties {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        gap: 24px;
-        padding: 20px;
+        gap: 14px;
+        padding: 12px;
         background: var(--bg);
-        border-radius: 10px;
-        margin-bottom: 24px;
+        border-radius: 8px;
+        margin-bottom: 16px;
       }
       .inv-party-label {
-        font-size: 10px;
+        font-size: 8px;
         text-transform: uppercase;
         letter-spacing: 0.08em;
         color: var(--muted);
         font-weight: 700;
-        margin-bottom: 6px;
+        margin-bottom: 3px;
       }
       .inv-party-name {
         font-weight: 700;
         color: var(--dark);
-        font-size: 14px;
+        font-size: 11px;
       }
       .inv-party-detail {
         color: var(--muted);
-        font-size: 12px;
+        font-size: 10px;
         line-height: 1.6;
       }
-
       .inv-items {
         width: 100%;
         border-collapse: collapse;
-        margin-bottom: 16px;
+        margin-bottom: 10px;
       }
       .inv-items thead {
         background: var(--dark);
       }
       .inv-items thead th {
         color: var(--white);
-        padding: 10px 12px;
+        padding: 7px 8px;
         text-align: left;
-        font-size: 11px;
+        font-size: 9px;
         text-transform: uppercase;
         letter-spacing: 0.06em;
       }
@@ -671,8 +704,8 @@
         background: var(--bg);
       }
       .inv-items td {
-        padding: 10px 12px;
-        font-size: 13px;
+        padding: 7px 8px;
+        font-size: 10px;
         border-bottom: 1px solid var(--border);
       }
       .inv-items td:last-child {
@@ -680,60 +713,59 @@
         font-weight: 700;
         color: var(--dark);
       }
-
       .inv-totals {
         margin-left: auto;
-        width: 220px;
+        width: 168px;
       }
       .inv-total-row {
         display: flex;
         justify-content: space-between;
-        padding: 6px 0;
-        font-size: 13px;
+        padding: 3px 0;
+        font-size: 10px;
         border-bottom: 1px solid var(--border);
       }
       .inv-total-row.final {
         background: var(--primary);
         color: var(--white);
-        padding: 10px 12px;
-        border-radius: 8px;
+        padding: 7px 8px;
+        border-radius: 5px;
         font-weight: 800;
-        font-size: 15px;
-        margin-top: 8px;
+        font-size: 12px;
+        margin-top: 4px;
         border: none;
       }
       .inv-notes {
-        margin-top: 24px;
-        padding: 16px;
+        margin-top: 16px;
+        padding: 10px;
         background: var(--primary-light);
-        border-radius: 8px;
+        border-radius: 6px;
         border-left: 3px solid var(--primary);
       }
       .inv-notes-label {
-        font-size: 11px;
+        font-size: 8px;
         text-transform: uppercase;
         letter-spacing: 0.06em;
         color: var(--primary);
         font-weight: 700;
-        margin-bottom: 4px;
+        margin-bottom: 3px;
       }
       .inv-notes-text {
-        font-size: 12px;
+        font-size: 10px;
         color: var(--text);
       }
       .inv-footer {
-        margin-top: 32px;
+        margin-top: 20px;
         text-align: center;
-        padding-top: 16px;
+        padding-top: 10px;
         border-top: 1px solid var(--border);
         color: var(--muted);
-        font-size: 11px;
+        font-size: 9px;
       }
 
-      /* FEATURES */
+      /* OTHER SECTIONS — unchanged */
       .features {
         background: var(--white);
-        padding: 80px 24px;
+        padding: 60px 16px;
       }
       .features-inner {
         max-width: 1200px;
@@ -741,39 +773,38 @@
       }
       .section-header {
         text-align: center;
-        margin-bottom: 56px;
+        margin-bottom: 40px;
       }
       .section-tag {
         display: inline-block;
         background: var(--primary-light);
         color: var(--primary);
-        font-size: 13px;
+        font-size: 11px;
         font-weight: 700;
-        padding: 6px 16px;
+        padding: 4px 13px;
         border-radius: 100px;
-        margin-bottom: 16px;
+        margin-bottom: 11px;
         text-transform: uppercase;
         letter-spacing: 0.06em;
       }
       .section-header h2 {
-        font-size: 38px;
-        margin-bottom: 16px;
+        font-size: 30px;
+        margin-bottom: 10px;
       }
       .section-header p {
         color: var(--muted);
-        font-size: 17px;
-        max-width: 560px;
+        font-size: 14px;
+        max-width: 500px;
         margin: 0 auto;
       }
-
       .features-grid {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        gap: 28px;
+        gap: 18px;
       }
       .feature-card {
-        padding: 32px;
-        border-radius: 16px;
+        padding: 22px;
+        border-radius: 13px;
         border: 1.5px solid var(--border);
         transition: all 0.3s;
         background: var(--white);
@@ -781,50 +812,48 @@
       .feature-card:hover {
         border-color: var(--primary);
         box-shadow: var(--shadow);
-        transform: translateY(-4px);
+        transform: translateY(-3px);
       }
       .feature-icon {
-        width: 52px;
-        height: 52px;
+        width: 42px;
+        height: 42px;
         background: var(--primary-light);
-        border-radius: 14px;
+        border-radius: 10px;
         display: flex;
         align-items: center;
         justify-content: center;
-        font-size: 24px;
-        margin-bottom: 20px;
+        font-size: 19px;
+        margin-bottom: 12px;
       }
       .feature-card h3 {
-        font-size: 18px;
-        margin-bottom: 10px;
+        font-size: 15px;
+        margin-bottom: 6px;
       }
       .feature-card p {
         color: var(--muted);
-        font-size: 14px;
+        font-size: 12px;
         line-height: 1.7;
       }
-
-      /* HOW IT WORKS */
       .how-it-works {
-        padding: 80px 24px;
+        padding: 60px 16px;
         background: var(--bg);
       }
       .how-inner {
-        max-width: 900px;
+        max-width: 860px;
         margin: 0 auto;
       }
       .steps-grid {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        gap: 32px;
+        gap: 24px;
         position: relative;
       }
       .steps-grid::before {
         content: "";
         position: absolute;
-        top: 36px;
-        left: calc(16.67% + 20px);
-        right: calc(16.67% + 20px);
+        top: 32px;
+        left: calc(16.67% + 17px);
+        right: calc(16.67% + 17px);
         height: 2px;
         background: linear-gradient(90deg, var(--primary), var(--accent));
       }
@@ -833,44 +862,42 @@
         position: relative;
       }
       .step-num {
-        width: 72px;
-        height: 72px;
+        width: 62px;
+        height: 62px;
         border-radius: 50%;
         background: var(--primary);
         color: var(--white);
         font-family: "Syne", sans-serif;
-        font-size: 24px;
+        font-size: 20px;
         font-weight: 800;
         display: flex;
         align-items: center;
         justify-content: center;
-        margin: 0 auto 20px;
+        margin: 0 auto 14px;
         position: relative;
         z-index: 1;
         box-shadow: 0 8px 24px rgba(26, 86, 219, 0.3);
       }
       .step h3 {
-        font-size: 17px;
-        margin-bottom: 8px;
+        font-size: 14px;
+        margin-bottom: 5px;
       }
       .step p {
         color: var(--muted);
-        font-size: 14px;
+        font-size: 12px;
       }
-
-      /* FAQ */
       .faq {
-        padding: 80px 24px;
+        padding: 60px 16px;
         background: var(--white);
       }
       .faq-inner {
-        max-width: 780px;
+        max-width: 740px;
         margin: 0 auto;
       }
       .faq-item {
         border: 1.5px solid var(--border);
-        border-radius: 12px;
-        margin-bottom: 12px;
+        border-radius: 10px;
+        margin-bottom: 8px;
         overflow: hidden;
         transition: border-color 0.2s;
       }
@@ -878,80 +905,76 @@
         border-color: var(--primary);
       }
       .faq-question {
-        padding: 20px 24px;
+        padding: 14px 18px;
         display: flex;
         justify-content: space-between;
         align-items: center;
         cursor: pointer;
         font-weight: 700;
-        font-size: 15px;
+        font-size: 13px;
         color: var(--dark);
       }
       .faq-question:hover {
         color: var(--primary);
       }
       .faq-icon {
-        font-size: 20px;
+        font-size: 16px;
         color: var(--primary);
         transition: transform 0.3s;
-        min-width: 24px;
+        min-width: 18px;
       }
       .faq-item.open .faq-icon {
         transform: rotate(45deg);
       }
       .faq-answer {
-        padding: 0 24px;
+        padding: 0 18px;
         max-height: 0;
         overflow: hidden;
         transition:
           max-height 0.3s ease,
           padding 0.3s;
         color: var(--muted);
-        font-size: 14px;
+        font-size: 12px;
         line-height: 1.8;
       }
       .faq-item.open .faq-answer {
         max-height: 200px;
-        padding: 0 24px 20px;
+        padding: 0 18px 14px;
       }
-
-      /* SEO CONTENT */
       .seo-content {
-        padding: 60px 24px;
+        padding: 48px 16px;
         background: var(--bg);
         border-top: 1px solid var(--border);
       }
       .seo-inner {
-        max-width: 1000px;
+        max-width: 960px;
         margin: 0 auto;
       }
       .seo-inner h2 {
-        font-size: 28px;
-        margin-bottom: 16px;
+        font-size: 23px;
+        margin-bottom: 10px;
       }
       .seo-inner h3 {
-        font-size: 20px;
-        margin: 28px 0 12px;
+        font-size: 17px;
+        margin: 20px 0 8px;
         color: var(--dark2);
       }
       .seo-inner p {
         color: var(--muted);
-        font-size: 15px;
+        font-size: 13px;
         line-height: 1.8;
-        margin-bottom: 12px;
+        margin-bottom: 9px;
       }
       .seo-grid {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        gap: 40px;
-        margin-top: 24px;
+        gap: 28px;
+        margin-top: 16px;
       }
-
-      /* FOOTER */
       footer {
         background: var(--dark);
         color: #94a3b8;
-        padding: 48px 24px 32px;
+        padding: 36px 16px 24px;
       }
       .footer-inner {
         max-width: 1200px;
@@ -960,26 +983,26 @@
       .footer-grid {
         display: grid;
         grid-template-columns: 2fr 1fr 1fr 1fr;
-        gap: 40px;
-        margin-bottom: 40px;
+        gap: 28px;
+        margin-bottom: 28px;
       }
       .footer-brand {
         font-family: "Syne", sans-serif;
-        font-size: 22px;
+        font-size: 18px;
         font-weight: 800;
         color: var(--white);
-        margin-bottom: 12px;
+        margin-bottom: 8px;
       }
       .footer-desc {
-        font-size: 14px;
+        font-size: 12px;
         line-height: 1.7;
         color: #64748b;
       }
       .footer-col h4 {
         font-family: "Syne", sans-serif;
         color: var(--white);
-        font-size: 14px;
-        margin-bottom: 16px;
+        font-size: 11px;
+        margin-bottom: 10px;
         text-transform: uppercase;
         letter-spacing: 0.06em;
       }
@@ -987,8 +1010,8 @@
         display: block;
         color: #64748b;
         text-decoration: none;
-        font-size: 14px;
-        margin-bottom: 10px;
+        font-size: 12px;
+        margin-bottom: 7px;
         transition: color 0.2s;
       }
       .footer-col a:hover {
@@ -996,21 +1019,16 @@
       }
       .footer-bottom {
         border-top: 1px solid #1e293b;
-        padding-top: 24px;
+        padding-top: 18px;
         display: flex;
         justify-content: space-between;
         align-items: center;
-        font-size: 13px;
-      }
-      .footer-bottom a {
-        color: #64748b;
-        text-decoration: none;
-      }
-      .footer-bottom a:hover {
-        color: var(--white);
+        font-size: 11px;
+        flex-wrap: wrap;
+        gap: 5px;
       }
 
-      /* RESPONSIVE */
+      /* ── RESPONSIVE — MOBILE ONLY, DESKTOP UNTOUCHED ── */
       @media (max-width: 900px) {
         .tool-grid {
           grid-template-columns: 1fr;
@@ -1029,6 +1047,50 @@
         }
       }
       @media (max-width: 600px) {
+        .nav-logo {
+          font-size: 13px;
+        }
+        .nav-links a {
+          font-size: 11px;
+          padding: 4px 7px;
+        }
+        .nav-links a:not(.active):nth-child(n + 3) {
+          display: none;
+        }
+        .hero {
+          padding: 30px 12px 24px;
+        }
+        .hero h1 {
+          font-size: 20px;
+        }
+        .hero p {
+          font-size: 13px;
+        }
+        .hero-stats {
+          gap: 10px;
+        }
+        .hero-badge {
+          font-size: 11px;
+        }
+        .tool-section {
+          padding: 18px 10px;
+        }
+        .form-body {
+          padding: 12px;
+          gap: 13px;
+        }
+        .form-row {
+          grid-template-columns: 1fr;
+        }
+        .action-btns {
+          flex-wrap: wrap;
+        }
+        .btn-primary {
+          flex: 1 1 auto;
+        }
+        .btn-secondary {
+          flex: 0 0 auto;
+        }
         .features-grid {
           grid-template-columns: 1fr;
         }
@@ -1036,58 +1098,110 @@
           grid-template-columns: 1fr;
         }
         .footer-grid {
-          grid-template-columns: 1fr;
-        }
-        .nav-links a:not(.nav-cta):not(.active) {
-          display: none;
-        }
-        .hero h1 {
-          font-size: 28px;
-        }
-        .form-row {
-          grid-template-columns: 1fr;
+          grid-template-columns: 1fr 1fr;
         }
         .seo-grid {
           grid-template-columns: 1fr;
         }
       }
+      @media (max-width: 380px) {
+        .nav-logo {
+          font-size: 12px;
+        }
+        .nav-links a:not(.active) {
+          display: none;
+        }
+      }
 
-      /* PRINT/PDF STYLES */
+      /* PRINT */
       @media print {
+        * {
+          -webkit-print-color-adjust: exact !important;
+          print-color-adjust: exact !important;
+          color-adjust: exact !important;
+        }
         nav,
-        .ad-banner,
+        .ad-banner-top,
         .hero,
-        .tool-section .form-panel,
+        .tool-header,
+        .form-panel,
         .features,
         .how-it-works,
         .faq,
         .seo-content,
         footer,
         .action-btns,
-        .form-panel-header,
-        .preview-panel-header {
+        .preview-panel-header,
+        #bottomAd {
           display: none !important;
         }
+        html,
+        body {
+          background: #fff !important;
+          margin: 0 !important;
+          padding: 0 !important;
+        }
+        .tool-section {
+          padding: 0 !important;
+          max-width: 100% !important;
+          margin: 0 !important;
+        }
+        .tool-grid {
+          display: block !important;
+        }
         .preview-panel {
-          box-shadow: none;
-          border: none;
+          position: static !important;
+          box-shadow: none !important;
+          border: none !important;
+          border-radius: 0 !important;
+          width: 100% !important;
         }
         .invoice-preview {
-          padding: 0;
+          padding: 10px !important;
+          min-height: unset !important;
+        }
+        .inv-items thead {
+          background: #0f172a !important;
+        }
+        .inv-items thead th {
+          color: #ffffff !important;
+        }
+        .inv-total-row.final {
+          background: #1a56db !important;
+          color: #ffffff !important;
+        }
+        .inv-parties {
+          background: #f8fafc !important;
+        }
+        .inv-notes {
+          background: #eff6ff !important;
+          border-left: 3px solid #1a56db !important;
+        }
+        .inv-notes-label {
+          color: #1a56db !important;
+        }
+        .inv-logo {
+          color: #1a56db !important;
+        }
+        .inv-items tbody tr:nth-child(even) {
+          background: #f8fafc !important;
+        }
+        @page {
+          margin: 10mm;
+          size: A4 portrait;
         }
       }
     </style>
   </head>
   <body>
-    <!-- NAVIGATION -->
     <nav>
       <div class="nav-inner">
-        <a href="index.html" class="nav-logo">
-          ⚡ Quick<span>InvoiceFree</span>
-        </a>
+        <a href="index.html" class="nav-logo"
+          >⚡ Quick<span>InvoiceFree</span></a
+        >
         <div class="nav-links">
-          <a href="index.html" class="active">Invoice Generator</a>
-          <a href="expense.html">Expense Tracker</a>
+          <a href="index.html" class="active">Invoice</a>
+          <a href="expense.html">Expenses</a>
           <a href="blog.html">Blog</a>
           <a href="about.html">About</a>
           <a href="contact.html">Contact</a>
@@ -1095,14 +1209,10 @@
       </div>
     </nav>
 
-    <!-- TOP AD BANNER -->
     <div class="ad-banner-top">
-      <div class="ad-banner">
-        📢 Advertisement — Your Ad Here (Google AdSense 728×90)
-      </div>
+      <div class="ad-banner">📢 Advertisement — Google AdSense 728×90</div>
     </div>
 
-    <!-- HERO -->
     <section class="hero">
       <div class="hero-content">
         <div class="hero-badge">✨ 100% Free — No Signup Required</div>
@@ -1128,23 +1238,18 @@
       </div>
     </section>
 
-    <!-- INVOICE TOOL -->
     <section class="tool-section">
       <div class="tool-header">
         <h2>Create Your Invoice Below</h2>
-        <p>
-          Fill in the form on the left — your invoice preview updates live on
-          the right
-        </p>
+        <p>Fill in the form — your invoice preview updates live on the right</p>
       </div>
-
       <div class="tool-grid">
         <!-- FORM -->
         <div class="form-panel">
           <div class="form-panel-header">
             <svg
-              width="20"
-              height="20"
+              width="15"
+              height="15"
               fill="none"
               stroke="currentColor"
               stroke-width="2"
@@ -1157,21 +1262,65 @@
             <h3>Invoice Details</h3>
           </div>
           <div class="form-body">
-            <!-- YOUR INFO -->
             <div>
               <div class="form-section-title">Your Business Info</div>
               <div class="form-row">
                 <div class="form-group">
-                  <label for="fromName">Business / Your Name</label>
+                  <label>Logo (Optional)</label>
+                  <div
+                    class="logo-upload-area"
+                    title="Click to upload your logo"
+                    id="logoUploadArea"
+                  >
+                    <input
+                      type="file"
+                      id="logoInput"
+                      accept="image/*"
+                      onchange="handleLogo(this)"
+                    />
+                    <img
+                      id="logoPreviewThumb"
+                      class="logo-preview"
+                      src=""
+                      alt="Logo"
+                    />
+                    <div class="logo-placeholder" id="logoPlaceholder">
+                      <span>🖼️</span>Upload Logo
+                    </div>
+                  </div>
+                  <button
+                    id="removeLogo"
+                    onclick="removeLogo()"
+                    style="
+                      display: none;
+                      margin-top: 4px;
+                      width: 100%;
+                      background: #fee2e2;
+                      color: #ef4444;
+                      border: none;
+                      border-radius: 6px;
+                      padding: 4px 8px;
+                      font-size: 10px;
+                      font-weight: 700;
+                      cursor: pointer;
+                    "
+                  >
+                    ✕ Remove Logo
+                  </button>
+                </div>
+                <div class="form-group">
+                  <label for="fromName">Business Name</label>
                   <input
                     type="text"
                     id="fromName"
-                    placeholder="Your Business Name"
+                    placeholder="Your Business"
                     value="QuickBiz Solutions"
                   />
                 </div>
+              </div>
+              <div class="form-row" style="margin-top: 8px">
                 <div class="form-group">
-                  <label for="fromEmail">Email Address</label>
+                  <label for="fromEmail">Email</label>
                   <input
                     type="email"
                     id="fromEmail"
@@ -1179,10 +1328,8 @@
                     value="hello@quickbiz.com"
                   />
                 </div>
-              </div>
-              <div class="form-row" style="margin-top: 12px">
                 <div class="form-group">
-                  <label for="fromPhone">Phone Number</label>
+                  <label for="fromPhone">Phone</label>
                   <input
                     type="text"
                     id="fromPhone"
@@ -1190,19 +1337,18 @@
                     value="+1 555 000 1234"
                   />
                 </div>
-                <div class="form-group">
-                  <label for="fromAddress">Address</label>
-                  <input
-                    type="text"
-                    id="fromAddress"
-                    placeholder="123 Main St, City"
-                    value="456 Business Ave, NY"
-                  />
-                </div>
+              </div>
+              <div class="form-group full" style="margin-top: 8px">
+                <label for="fromAddress">Address</label>
+                <input
+                  type="text"
+                  id="fromAddress"
+                  placeholder="123 Main St, City"
+                  value="456 Business Ave, NY"
+                />
               </div>
             </div>
 
-            <!-- CLIENT INFO -->
             <div>
               <div class="form-section-title">Bill To (Client Info)</div>
               <div class="form-row">
@@ -1225,7 +1371,7 @@
                   />
                 </div>
               </div>
-              <div class="form-group full" style="margin-top: 12px">
+              <div class="form-group full" style="margin-top: 8px">
                 <label for="toAddress">Client Address</label>
                 <input
                   type="text"
@@ -1236,7 +1382,6 @@
               </div>
             </div>
 
-            <!-- INVOICE DETAILS -->
             <div>
               <div class="form-section-title">Invoice Details</div>
               <div class="form-row">
@@ -1268,29 +1413,25 @@
               </div>
             </div>
 
-            <!-- LINE ITEMS -->
             <div>
               <div class="form-section-title">Services / Items</div>
               <table class="items-table">
                 <thead>
                   <tr>
                     <th style="width: 42%">Description</th>
-                    <th style="width: 14%">Qty</th>
+                    <th style="width: 13%">Qty</th>
                     <th style="width: 18%">Rate</th>
                     <th style="width: 18%">Amount</th>
-                    <th style="width: 8%"></th>
+                    <th style="width: 9%"></th>
                   </tr>
                 </thead>
-                <tbody id="itemsBody">
-                  <!-- rows injected by JS -->
-                </tbody>
+                <tbody id="itemsBody"></tbody>
               </table>
               <button class="btn-add-item" onclick="addItem()">
                 + Add Item
               </button>
             </div>
 
-            <!-- TAX & TOTALS -->
             <div>
               <div class="form-section-title">Tax & Total</div>
               <div class="form-row">
@@ -1317,7 +1458,7 @@
                   />
                 </div>
               </div>
-              <div class="totals-area" style="margin-top: 12px">
+              <div class="totals-area" style="margin-top: 8px">
                 <div class="totals-row">
                   <span>Subtotal</span><span id="subtotalDisplay">$0.00</span>
                 </div>
@@ -1333,7 +1474,6 @@
               </div>
             </div>
 
-            <!-- NOTES -->
             <div>
               <div class="form-section-title">Notes (Optional)</div>
               <div class="form-group">
@@ -1346,27 +1486,12 @@ Thank you for your business! Payment is due within 30 days. Please transfer to B
               </div>
             </div>
 
-            <!-- ACTIONS -->
+            <!-- ACTIONS — PDF button removed, Print and Clear remain -->
             <div class="action-btns">
-              <button class="btn-primary" onclick="downloadPDF()">
+              <button class="btn-primary" onclick="printInvoice()">
                 <svg
-                  width="18"
-                  height="18"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    d="M12 10v6m0 0l-3-3m3 3l3-3M3 17V7a2 2 0 012-2h6l2 2h6a2 2 0 012 2v8a2 2 0 01-2 2H5a2 2 0 01-2-2z"
-                  />
-                </svg>
-                Download PDF
-              </button>
-              <button class="btn-secondary" onclick="printInvoice()">
-                <svg
-                  width="18"
-                  height="18"
+                  width="14"
+                  height="14"
                   fill="none"
                   stroke="currentColor"
                   stroke-width="2"
@@ -1376,14 +1501,20 @@ Thank you for your business! Payment is due within 30 days. Please transfer to B
                     d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4a2 2 0 00-2-2H9a2 2 0 00-2 2v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z"
                   />
                 </svg>
-                Print
+                Print / Save PDF
               </button>
-              <button class="btn-secondary" onclick="clearForm()">🗑️</button>
+              <button
+                class="btn-secondary"
+                onclick="clearForm()"
+                title="Clear all"
+              >
+                🗑️ Clear
+              </button>
             </div>
           </div>
         </div>
 
-        <!-- PREVIEW PANEL -->
+        <!-- PREVIEW -->
         <div class="preview-panel">
           <div class="preview-panel-header">
             <h3>📄 Live Preview</h3>
@@ -1391,7 +1522,10 @@ Thank you for your business! Payment is due within 30 days. Please transfer to B
           </div>
           <div class="invoice-preview" id="invoicePreview">
             <div class="inv-header">
-              <div class="inv-logo" id="prevFromName">QuickBiz Solutions</div>
+              <div class="inv-logo-area">
+                <img id="invLogoImg" class="inv-logo-img" src="" alt="Logo" />
+                <div class="inv-logo" id="prevFromName">QuickBiz Solutions</div>
+              </div>
               <div class="inv-title-block">
                 <div class="inv-title">INVOICE</div>
                 <div class="inv-number" id="prevInvoiceNum">#INV-001</div>
@@ -1439,7 +1573,7 @@ Thank you for your business! Payment is due within 30 days. Please transfer to B
             </table>
 
             <div
-              style="display: flex; justify-content: flex-end; margin-top: 8px"
+              style="display: flex; justify-content: flex-end; margin-top: 6px"
             >
               <div class="inv-totals">
                 <div class="inv-total-row">
@@ -1472,12 +1606,14 @@ Thank you for your business! Payment is due within 30 days. Please transfer to B
       </div>
     </section>
 
-    <!-- BOTTOM AD -->
-    <div style="max-width: 1200px; margin: 0 auto; padding: 0 24px 32px">
+    <div
+      id="bottomAd"
+      style="max-width: 1200px; margin: 0 auto; padding: 0 16px 28px"
+    >
       <div
         class="ad-banner"
         style="
-          height: 90px;
+          height: 80px;
           display: flex;
           align-items: center;
           justify-content: center;
@@ -1487,7 +1623,6 @@ Thank you for your business! Payment is due within 30 days. Please transfer to B
       </div>
     </div>
 
-    <!-- FEATURES -->
     <section class="features">
       <div class="features-inner">
         <div class="section-header">
@@ -1551,7 +1686,6 @@ Thank you for your business! Payment is due within 30 days. Please transfer to B
       </div>
     </section>
 
-    <!-- HOW IT WORKS -->
     <section class="how-it-works">
       <div class="how-inner">
         <div class="section-header">
@@ -1581,17 +1715,16 @@ Thank you for your business! Payment is due within 30 days. Please transfer to B
           </div>
           <div class="step">
             <div class="step-num">3</div>
-            <h3>Download PDF</h3>
+            <h3>Print or Save PDF</h3>
             <p>
-              Click the Download PDF button and get your professional invoice
-              file immediately.
+              Click Print / Save PDF and save your professional invoice directly
+              from your browser.
             </p>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- FAQ -->
     <section class="faq">
       <div class="faq-inner">
         <div class="section-header">
@@ -1599,7 +1732,7 @@ Thank you for your business! Payment is due within 30 days. Please transfer to B
           <h2>Frequently Asked Questions</h2>
           <p>Everything you need to know about our free invoice generator.</p>
         </div>
-        <div id="faqList">
+        <div>
           <div class="faq-item">
             <div class="faq-question" onclick="toggleFaq(this)">
               Is this invoice generator really free?
@@ -1627,8 +1760,8 @@ Thank you for your business! Payment is due within 30 days. Please transfer to B
               <span class="faq-icon">+</span>
             </div>
             <div class="faq-answer">
-              Yes! You can upload your business logo directly in the form and it
-              will appear on your invoice preview and PDF download
+              Yes! Click the Upload Logo area in the form and select your image.
+              It will appear instantly on your invoice preview and PDF download
               automatically.
             </div>
           </div>
@@ -1666,7 +1799,6 @@ Thank you for your business! Payment is due within 30 days. Please transfer to B
       </div>
     </section>
 
-    <!-- SEO CONTENT BLOCK -->
     <section class="seo-content">
       <div class="seo-inner">
         <h2>
@@ -1678,7 +1810,6 @@ Thank you for your business! Payment is due within 30 days. Please transfer to B
           freelancer, consultant, contractor, or small business owner, creating
           invoices should be fast and painless.
         </p>
-
         <div class="seo-grid">
           <div>
             <h3>What is an Invoice Generator?</h3>
@@ -1690,15 +1821,14 @@ Thank you for your business! Payment is due within 30 days. Please transfer to B
               produces a formatted, professional PDF invoice ready to send to
               your clients.
             </p>
-
             <h3>Why Do Freelancers Need Invoices?</h3>
             <p>
               Invoices are legally binding documents that confirm the services
               you provided and the amount owed. A professional invoice helps you
               get paid faster, keeps your records organized, and gives your
-              business credibility. According to research, freelancers who send
-              professional invoices get paid up to 3x faster than those using
-              informal payment requests.
+              business credibility. Freelancers who send professional invoices
+              get paid up to 3x faster than those using informal payment
+              requests.
             </p>
           </div>
           <div>
@@ -1710,22 +1840,20 @@ Thank you for your business! Payment is due within 30 days. Please transfer to B
               or products with quantities and rates, the total amount due
               including any taxes, and your payment terms and banking details.
             </p>
-
             <h3>How to Send an Invoice to a Client</h3>
             <p>
-              After generating your invoice PDF with QuickInvoiceFree, you can
-              email it directly to your client as an attachment. Include the
-              invoice number in your email subject line for easy reference.
-              Always keep a copy of every invoice for your records. Following up
-              politely 3-5 days before the due date can significantly improve
-              your payment rates.
+              After generating your invoice PDF with QuickInvoiceFree, email it
+              directly to your client as an attachment. Include the invoice
+              number in your email subject line for easy reference. Always keep
+              a copy of every invoice for your records. Following up politely
+              3-5 days before the due date can significantly improve your
+              payment rates.
             </p>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- FOOTER -->
     <footer>
       <div class="footer-inner">
         <div class="footer-grid">
@@ -1754,23 +1882,24 @@ Thank you for your business! Payment is due within 30 days. Please transfer to B
           </div>
         </div>
         <div class="footer-bottom">
-          <span>© 2025 QuickInvoiceFree.com — Free Invoice Generator</span>
+          <span
+            >© 2025–<span id="yr"></span> QuickInvoiceFree.com — Free Invoice
+            Generator</span
+          >
           <span>Made with ❤️ for freelancers worldwide</span>
         </div>
       </div>
     </footer>
 
-    <!-- html2pdf CDN -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
-
     <script>
-      // ---- STATE ----
+      document.getElementById("yr").textContent = new Date().getFullYear();
+
       let items = [
         { desc: "Web Design Services", qty: 1, rate: 500 },
         { desc: "SEO Optimization", qty: 3, rate: 150 },
       ];
+      let logoDataUrl = null;
 
-      // ---- INIT ----
       document.addEventListener("DOMContentLoaded", () => {
         const today = new Date();
         const due = new Date(today);
@@ -1786,32 +1915,54 @@ Thank you for your business! Payment is due within 30 days. Please transfer to B
         updatePreview();
       });
 
-      // ---- BIND ALL INPUTS ----
-      function bindInputs() {
-        document.querySelectorAll("input, textarea, select").forEach((el) => {
-          el.addEventListener("input", updatePreview);
-        });
+      function handleLogo(input) {
+        const file = input.files[0];
+        if (!file) return;
+        const reader = new FileReader();
+        reader.onload = (e) => {
+          logoDataUrl = e.target.result;
+          const thumb = document.getElementById("logoPreviewThumb");
+          thumb.src = logoDataUrl;
+          thumb.style.display = "block";
+          document.getElementById("logoPlaceholder").style.display = "none";
+          document.getElementById("removeLogo").style.display = "block";
+          const invImg = document.getElementById("invLogoImg");
+          invImg.src = logoDataUrl;
+          invImg.style.display = "block";
+          document.getElementById("prevFromName").style.display = "none";
+        };
+        reader.readAsDataURL(file);
       }
 
-      // ---- RENDER ITEMS FORM ----
+      function removeLogo() {
+        logoDataUrl = null;
+        document.getElementById("logoPreviewThumb").style.display = "none";
+        document.getElementById("logoPlaceholder").style.display = "block";
+        document.getElementById("removeLogo").style.display = "none";
+        document.getElementById("logoInput").value = "";
+        document.getElementById("invLogoImg").style.display = "none";
+        document.getElementById("prevFromName").style.display = "block";
+      }
+
+      function bindInputs() {
+        document
+          .querySelectorAll("input:not([type=file]), textarea, select")
+          .forEach((el) => el.addEventListener("input", updatePreview));
+      }
+
       function renderItems() {
-        const body = document.getElementById("itemsBody");
-        body.innerHTML = items
+        document.getElementById("itemsBody").innerHTML = items
           .map(
             (item, i) => `
-      <tr>
-        <td><input type="text" value="${item.desc}" placeholder="Description" onchange="items[${i}].desc=this.value;updatePreview()" /></td>
-        <td><input type="number" value="${item.qty}" min="1" style="width:60px" onchange="items[${i}].qty=+this.value;updatePreview()" /></td>
-        <td><input type="number" value="${item.rate}" min="0" step="0.01" style="width:80px" onchange="items[${i}].rate=+this.value;updatePreview()" /></td>
-        <td class="amount-cell">${getCurrency()}${(item.qty * item.rate).toFixed(2)}</td>
-        <td><button class="btn-remove" onclick="removeItem(${i})">×</button></td>
-      </tr>
-    `,
+          <tr>
+            <td><input type="text" value="${item.desc}" placeholder="Description" oninput="items[${i}].desc=this.value;updatePreview()" /></td>
+            <td><input type="number" value="${item.qty}" min="1" style="width:48px" oninput="items[${i}].qty=+this.value;updatePreview()" /></td>
+            <td><input type="number" value="${item.rate}" min="0" step="0.01" style="width:68px" oninput="items[${i}].rate=+this.value;updatePreview()" /></td>
+            <td class="amount-cell">${getCurrency()}${(item.qty * item.rate).toFixed(2)}</td>
+            <td><button class="btn-remove" onclick="removeItem(${i})">×</button></td>
+          </tr>`,
           )
           .join("");
-        document.querySelectorAll("#itemsBody input").forEach((el) => {
-          el.addEventListener("input", updatePreview);
-        });
       }
 
       function addItem() {
@@ -1819,7 +1970,6 @@ Thank you for your business! Payment is due within 30 days. Please transfer to B
         renderItems();
         updatePreview();
       }
-
       function removeItem(i) {
         if (items.length > 1) {
           items.splice(i, 1);
@@ -1828,46 +1978,37 @@ Thank you for your business! Payment is due within 30 days. Please transfer to B
         }
       }
 
-      // ---- GET VALUES ----
       const g = (id) => document.getElementById(id)?.value || "";
       const getCurrency = () => g("currency") || "$";
 
       function calcTotals() {
-        const subtotal = items.reduce((s, it) => s + it.qty * it.rate, 0);
-        const discountPct = parseFloat(g("discount")) || 0;
-        const taxPct = parseFloat(g("taxRate")) || 0;
-        const discAmt = (subtotal * discountPct) / 100;
-        const afterDisc = subtotal - discAmt;
-        const taxAmt = (afterDisc * taxPct) / 100;
-        const total = afterDisc + taxAmt;
-        return { subtotal, discAmt, taxAmt, total };
+        const sub = items.reduce((s, it) => s + it.qty * it.rate, 0);
+        const disc = parseFloat(g("discount")) || 0;
+        const tax = parseFloat(g("taxRate")) || 0;
+        const da = (sub * disc) / 100;
+        const af = sub - da;
+        const ta = (af * tax) / 100;
+        return { subtotal: sub, discAmt: da, taxAmt: ta, total: af + ta };
       }
 
-      function fmt(n) {
-        return getCurrency() + n.toFixed(2);
-      }
+      const fmt = (n) => getCurrency() + n.toFixed(2);
       function fmtDate(str) {
         if (!str) return "—";
-        const d = new Date(str + "T00:00:00");
-        return d.toLocaleDateString("en-US", {
+        return new Date(str + "T00:00:00").toLocaleDateString("en-US", {
           year: "numeric",
           month: "short",
           day: "numeric",
         });
       }
 
-      // ---- UPDATE PREVIEW ----
       function updatePreview() {
         const { subtotal, discAmt, taxAmt, total } = calcTotals();
         const cur = getCurrency();
-
-        // Header
-        setText("prevFromName", g("fromName") || "Your Business");
+        if (!logoDataUrl)
+          setText("prevFromName", g("fromName") || "Your Business");
         setText("prevInvoiceNum", "#" + (g("invoiceNum") || "INV-001"));
         setText("prevDate", fmtDate(g("invoiceDate")));
         setText("prevDue", fmtDate(g("dueDate")));
-
-        // Parties
         setText("prevFromNameB", g("fromName") || "Your Business");
         setText(
           "prevFromDetail",
@@ -1880,37 +2021,20 @@ Thank you for your business! Payment is due within 30 days. Please transfer to B
           "prevToDetail",
           [g("toEmail"), g("toAddress")].filter(Boolean).join("\n"),
         );
-
-        // Fix line breaks in address
         ["prevFromDetail", "prevToDetail"].forEach((id) => {
           const el = document.getElementById(id);
           if (el) el.innerHTML = el.textContent.replace(/\n/g, "<br>");
         });
-
-        // Items
         document.getElementById("previewItems").innerHTML = items
           .map(
-            (it) => `
-      <tr>
-        <td>${it.desc || "—"}</td>
-        <td>${it.qty}</td>
-        <td>${cur}${(+it.rate).toFixed(2)}</td>
-        <td>${cur}${(it.qty * it.rate).toFixed(2)}</td>
-      </tr>
-    `,
+            (it) =>
+              `<tr><td>${it.desc || "—"}</td><td>${it.qty}</td><td>${cur}${(+it.rate).toFixed(2)}</td><td>${cur}${(it.qty * it.rate).toFixed(2)}</td></tr>`,
           )
           .join("");
-
-        // Update amount cells in form
-        document
-          .querySelectorAll("#itemsBody .amount-cell")
-          .forEach((cell, i) => {
-            if (items[i])
-              cell.textContent =
-                cur + (items[i].qty * items[i].rate).toFixed(2);
-          });
-
-        // Totals
+        document.querySelectorAll("#itemsBody .amount-cell").forEach((c, i) => {
+          if (items[i])
+            c.textContent = cur + (items[i].qty * items[i].rate).toFixed(2);
+        });
         setText("subtotalDisplay", fmt(subtotal));
         setText("prevSubtotal", fmt(subtotal));
         setText("discountDisplay", "-" + fmt(discAmt));
@@ -1919,8 +2043,6 @@ Thank you for your business! Payment is due within 30 days. Please transfer to B
         setText("prevTax", fmt(taxAmt));
         setText("totalDisplay", fmt(total));
         setText("prevTotal", fmt(total));
-
-        // Notes
         const notes = g("notes");
         setText("prevNotes", notes);
         document.getElementById("prevNotesBox").style.display = notes
@@ -1931,19 +2053,6 @@ Thank you for your business! Payment is due within 30 days. Please transfer to B
       function setText(id, val) {
         const el = document.getElementById(id);
         if (el) el.textContent = val;
-      }
-
-      // ---- DOWNLOAD PDF ----
-      function downloadPDF() {
-        const el = document.getElementById("invoicePreview");
-        const opt = {
-          margin: [10, 10, 10, 10],
-          filename: `Invoice-${g("invoiceNum") || "INV-001"}.pdf`,
-          image: { type: "jpeg", quality: 0.98 },
-          html2canvas: { scale: 2 },
-          jsPDF: { unit: "mm", format: "a4", orientation: "portrait" },
-        };
-        html2pdf().set(opt).from(el).save();
       }
 
       function printInvoice() {
@@ -1968,15 +2077,19 @@ Thank you for your business! Payment is due within 30 days. Please transfer to B
         document.getElementById("invoiceNum").value = "INV-001";
         document.getElementById("taxRate").value = "0";
         document.getElementById("discount").value = "0";
+        logoDataUrl = null;
+        document.getElementById("logoPreviewThumb").style.display = "none";
+        document.getElementById("logoPlaceholder").style.display = "block";
+        document.getElementById("removeLogo").style.display = "none";
+        document.getElementById("invLogoImg").style.display = "none";
+        document.getElementById("prevFromName").style.display = "block";
         items = [{ desc: "", qty: 1, rate: 0 }];
         renderItems();
         updatePreview();
       }
 
-      // ---- FAQ ----
       function toggleFaq(el) {
-        const item = el.parentElement;
-        item.classList.toggle("open");
+        el.parentElement.classList.toggle("open");
       }
     </script>
   </body>
